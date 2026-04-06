@@ -1,0 +1,36 @@
+// Inbox
+// For developers who are not actively working on this project.
+// You can add fixes, overrides here if you are unsure where in the project they should be added.
+// The main developer(s) can then be aware of these changes and integrate them into the main project files.
+
+// Pre-hide GSAP animation targets before first paint so content doesn't flash
+// visible → hidden → animated. The `html.js` class is set synchronously in <head>
+// before the browser renders, so this applies before the first paint.
+// GSAP clears these inline styles via clearProps when each animation completes.
+html.js {
+	.animated > *,
+	.animated-up > * {
+		opacity: 0;
+	}
+}
+
+.blog-image {
+	display: block;
+	width: 100%;
+	max-width: 720px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	margin-top: 5px;
+	border-left: 4px solid var(--color-darkblue);
+	padding-left: 0.5em;
+}
+
+.page-news-single article header {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}

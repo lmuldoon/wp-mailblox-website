@@ -1,0 +1,21 @@
+// Form Components - Error States
+
+.input.has-error {
+	padding-right: calc(2em + 2%);
+  border-color: var(--color-warning);
+
+  // Use !important to override extensions such as LastPass
+  background-image: url("data:image/svg+xml,%3Csvg class='svg-icon svg-warning' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' aria-hidden='true' focusable='false'%3E%3Cpath d='M12.984 14.016v-4.031h-1.969v4.031h1.969zM12.984 18v-2.016h-1.969v2.016h1.969zM0.984 21l11.016-18.984 11.016 18.984h-22.031z' fill='#{var(--color-warning)}'%3E%3C/path%3E%3C/svg%3E%0A") !important;
+  background-repeat: no-repeat;
+  background-position: 98% center;
+  background-size: auto 1.5em;
+}
+
+textarea.input.has-error {
+  background-position: 98% 95%;
+}
+
+.input-message.has-error,
+.input-message--error {
+  color: var(--color-warning);
+}

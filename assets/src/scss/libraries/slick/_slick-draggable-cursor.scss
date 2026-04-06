@@ -1,0 +1,16 @@
+/**
+ * Show a grab cursor when using a draggable slider.
+ * On mouse down (:active) the cursor will appear to grab the content.
+ */
+
+.slick-list.draggable .slick-slide:not(:only-child) {
+	cursor: move;
+	cursor: -webkit-grab;
+	cursor: grab;
+
+	&:active {
+		cursor: move;
+		cursor: -webkit-grabbing;
+		cursor: grabbing;			
+	}
+}

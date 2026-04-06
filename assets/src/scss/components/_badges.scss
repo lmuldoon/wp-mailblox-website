@@ -1,0 +1,30 @@
+/**
+ * Badge components — Pro label, release tags, etc.
+ */
+
+.badge {
+	display: inline-block;
+	padding: 0.2em 0.6em;
+	border-radius: 4px;
+	font-size: 0.7em;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	vertical-align: middle;
+	line-height: 1.4;
+}
+
+.badge--pro {
+	background: var(--color-coral);
+	color: var(--color-white);
+}
+
+.badge--release {
+	background: var(--color-success);
+	color: var(--color-white);
+}
+
+.badge--beta {
+	background: var(--color-warning);
+	color: var(--color-white);
+}

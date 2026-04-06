@@ -1,0 +1,44 @@
+// Main screen style sheet
+// Imports all of the SCSS partials
+
+// START VARIABLE OVERRIDES
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// END VARIABLE OVERRIDES
+
+// import resets and base styling in specific order
+@import "base/variables";
+
+
+// Import all tools
+@import "tools/**/*";
+
+
+@import "base/reset"; 
+ @import "base/load-webfonts"; 
+@import "base/scaffolding"; 
+
+// Import third-party libraries, can be overridden by components below
+@import "libraries/**/*.scss";
+
+// Import elements base, abstracted objects and finally specific components
+@import "objects/**/*scss";
+@import "components/**/*scss";
+
+// Import inbox & shame (hacks) styles
+@import "inbox";
+@import "shame";
+
+// Import any utility classes
+// Last as they have the highest specifity
+@import "utilities/**/*"; 
+
+.pulled-up{
+    @screen md{
+
+        transform: translateY(calc(var(--main-title-height) / -1));
+    }
+}

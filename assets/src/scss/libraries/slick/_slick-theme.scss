@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-font-path: "./fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "./" !default;
+$slick-arrow-color: var(--color-white) !default;
+$slick-dot-color: black !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 25px !default;
+$slick-dot-gutter: 25px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+@function slick-font-url($url) {
+    @if function-exists(font-url) {
+        @return font-url($url);
+    }
+    @else {
+        @return url($slick-font-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        //background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+}
+
+
+/* Arrows */
+
+.featherlight-prev,
+.featherlight-next {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background: var(--color-accent2);
+    color: transparent;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    transition: 0.3s all ease;
+
+    @include atWidth( $under: 767px ) {
+        width: 42px;
+        height: 42px;
+    }
+
+    
+    &.slick-disabled:before {
+        opacity: $slick-opacity-not-active;
+    }
+
+    svg {
+        display: block;
+        width: 66.66%;
+        height: 40%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        fill: var(--color-white);
+    }
+
+    &:hover, &:focus {
+        background: var(--color-accent);
+        color: transparent;
+        svg {
+            fill: var(--color-white);
+        }
+    }
+}
+
+.slick-prev,
+.featherlight-prev {
+    left: 1rem;
+    [dir="rtl"] & {
+        left: auto;
+        right: 1rem;
+    }
+}
+
+.slick-next,
+.featherlight-next {
+    right: 1rem;
+    [dir="rtl"] & {
+        left: 1rem;
+        right: auto;
+    }
+}

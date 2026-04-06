@@ -1,0 +1,49 @@
+// Sass variables for the project
+
+/**
+ * Set project font stacks.
+ * Generic fallbacks are provided but should be tailored to the project.
+ *
+ * $sans-serif-fallback: Helvetica, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ * $serif-fallback: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+ */
+
+
+/**
+ * Set third-party variable overrides.
+ * e.g. Slick, Bourbon
+ */
+
+$slick-font-path: "../../static/slick/fonts/";
+$slick-loader-path: "../../static/slick/";
+
+
+:root {
+
+	// Forms 
+	--disabkled-color: #cccccc;
+	--choice-box-size: 30px;
+	--choice-box-color: #333333;
+	--choice-icon-color: #ffffff;
+
+	--container-width: 1400px;
+	--text-container-width: 1000px;
+	--wide-container-width: 1800px;
+	--small-text-container-width: 800px;
+
+	--container-padding: 1.5rem;
+	--inner-padding: clamp(2rem, 4vw, 6rem) 1.5rem;
+
+	--border-radius: 1.75rem;
+	--section-padding: clamp(3rem, 4vw, 6rem);
+
+	@screen sm {
+		--container-padding: 2rem;
+		 --section-padding: clamp(4.5rem, 5vw, 8rem);
+		--inner-padding: clamp(2rem, 4vw, 6rem) clamp(2.5rem, 5vw, 10rem);
+	}
+	@screen lg {
+        --section-padding: clamp(6rem, 6.5vw, 10rem);
+		--container-padding: 3rem;
+    }
+}

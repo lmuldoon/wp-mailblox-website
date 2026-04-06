@@ -1,0 +1,57 @@
+// Aspect ratio container
+// Will always keep content inside constrained to a ratio
+
+// Default ratio is a square (1:1)
+
+@use "sass:math";
+
+.ratio {
+	position: relative;
+	display: block;
+
+	&:before {
+		content: "";
+		display: block;
+		width: 100%;
+		padding-top: 100%;
+	}
+
+	> .ratio__content,
+	> iframe,
+	> embed,
+	> object,
+	> .map__embed {
+		position: absolute;
+		inset: 0;
+
+		display: block;
+		width: 100%;
+		height: 100%;
+
+	}
+
+	// Vimeo videos are pushed off center if object-fit is set
+	// Safari only bug
+	> iframe[src*="vimeo"] {
+		object-fit: unset;
+	}
+
+	> img {
+		object-fit: cover;
+	}
+}
+
+.ratio--16-9:before {
+	padding-top: (math.div(9, 16) * 100%);
+}
+
+.ratio--16-6:before {
+	padding-top: (math.div(9, 16) * 100%);
+	@screen md{
+		padding-top: (math.div(5, 16) * 100%);
+	}
+}
+
+.ratio--4-3:before {
+	padding-top: (3 * 0.25 * 100%);
+}

@@ -1,0 +1,39 @@
+/**
+ * Page-level constraining and wrapping elements.
+ */
+
+.container {	
+	display: block;
+	width: 100%;
+	max-width: var(--container-width);
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+	margin-left: auto;
+	margin-right: auto;
+
+	&.container--wide{
+		max-width: var(--wide-container-width);
+	}
+	&.container--full{
+		max-width: none;
+	}
+}
+
+.text-container {
+	display: block;
+	width: 100%;
+	max-width: var(--text-container-width);
+	
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.small-text-container {
+	display: block;
+	width: 100%;
+	max-width: var(--small-text-container-width);
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+	margin-left: auto;
+	margin-right: auto;
+}

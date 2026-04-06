@@ -1,0 +1,312 @@
+// Scaffolding, generic base styleså
+
+html {
+	min-height: 100vh;
+	height: -webkit-fill-available;
+}
+
+body {
+	font-size: var(--size-400);
+	color: var(--color-black);
+	font-family: var(--font-body);
+	font-weight: 300;
+	line-height:var(--font-lineheightregular);
+	position: relative;
+	//overflow: hidden;
+	background: var(--color-white);
+	.site-main {
+		//overflow: hidden;
+		position: relative;
+		z-index: 1;
+	}
+	font-feature-settings: "ccmp" 0; // turn off e_ becoming accented e-acute in Roboto font
+}
+
+// selected text
+::selection {
+	// background: ;
+	// color: ;
+}
+
+/** 
+ * Heading styles.
+ * Class version can be used to style a h1 as a h2 for semantic purposes.
+ */
+/**
+ * Heading styles. 
+ * Class version can be used to style a h1 as a h2 for semantic purposes.
+ */
+ h1, h2, h3, h4,
+ .h1, .h2, .h3, .h4 {
+	 @apply font-heading font-medium leading-tight;
+	color: var(--color-accent);
+	
+ }
+ 
+ h1, .h1 {
+	 font-size: var(--size-800);
+ }
+ 
+ h2, .h2 {
+	 font-size: var(--size-700);
+ }
+ 
+ h3, .h3 {
+	 font-size: var(--size-600);
+ }
+ 
+ h4, .h4 {
+	 font-size: var(--size-500);
+ }
+ 
+ h5, .h5 {
+	 font-size: var(--size-400);
+ }
+ 
+ 
+ // Global links
+ a:not([class]) {
+	 color: var(--color-accent);
+ 
+	 &:focus {
+		 
+	 }
+ 
+	 &:hover {
+		 
+	 }
+ 
+	 &[href^="tel:"] {
+		 color: inherit;
+	 }
+ }
+
+hr {
+	border-color: var(--color-grey);
+}
+
+/**
+ * Link element pseudo classes.
+ */
+
+a:not([class]) {
+	// any non-visited link
+	text-decoration: underline;
+	color: var(--color-accent);
+
+	&:link {}
+
+	&:visited {}
+
+	&:focus {}
+
+	&:hover {}
+
+	&:active {}
+}
+
+/**
+ * Default table styling.
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+
+	// Show captions at bottom of table
+	caption {
+		caption-side: bottom;
+		padding-top: 0.5em;
+
+		font-size: 0.9em;
+	}
+
+	// Relative padding and thin border
+	th,
+	td {
+		padding: 0.25em 0.5em;
+		border: 1px solid rgba(0, 0, 0, 0.4);
+
+		text-align: left;
+	}
+}
+
+// Introduce basic spacing between child elements
+// E.g. for WYSIWYG content wrappers
+.flow {
+	>*+* {
+		margin-top: var(--flow-space, 1em);
+	}
+	> :last-child {
+		margin-bottom:0 !important;
+	}
+}
+
+article {
+	position: relative;
+	z-index: 2;
+}
+
+.slashed{
+	position: relative;
+	display: inline-block;
+	&:after{
+		content: '';
+		width: 30px;
+		height:5px;
+		background: var(--color-accent);
+		transform: translateX(90%) rotate(-45deg) ;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+
+		@screen sm{
+			width: 45px;
+			height:5px;
+		}
+
+		@screen md{
+			width: 65px;
+			height:6px;
+		}
+	}
+}
+
+
+figure {
+
+	position: relative;
+	overflow: hidden;
+	transform: translateZ(0);
+
+	figcaption {
+		padding: 0.5rem 1rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+		background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.6));
+		width: 100%;
+	}
+
+}
+
+svg {
+	max-width: 100%;
+}
+
+
+ul:not([class]){
+	list-style: none;
+	padding-left: 0;
+	li{
+		margin-bottom: 1em;
+		padding-left: 1.7em;
+		position: relative;
+	
+		ul{
+			margin-top: 1rem;
+		}
+	
+		&:before {
+			content: url('https://api.iconify.design/fa6-solid/circle.svg?color=%2302ace9&width=12');
+			color: var(--color-accent);
+			font-weight: bold;
+			display: inline-block;
+			
+			position: absolute;
+			left: 0;
+			
+			
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+	
+		li{
+			&:before {
+				content: url('https://api.iconify.design/fa6-solid/circle.svg?color=%2302ace9&width=12');
+				color: var(--color-accent);
+				font-weight: bold;
+				display: inline-block;
+				
+				position: absolute;
+				left: 0;
+				
+				
+			}
+		
+		}
+	}
+}
+
+.content, .small-text-container {
+	
+	
+	p{
+		margin-bottom: 1.5rem;
+	}
+
+	h1,h2,h3,h4{
+		margin-top: 2rem;
+		margin-bottom: 1.5rem;
+	}
+}
+
+.terms-button{
+	&:hover, &:focus{
+		color: var(--color-grey)!important;
+	}
+}
+
+
+hr{
+	border-color: var(--orange);
+	margin-bottom: 3rem;
+}
+
+:focus-visible{
+	outline-offset: 4px!important;
+	transition: 0s outline-offset ease;
+}
+
+
+
+.skip-link{
+	display: inline-block;
+	margin: 1rem auto;
+	&:not(:focus-visible) {
+		position: absolute !important;
+		width: 1px !important;
+		height: 1px !important;
+		padding: 0 !important;
+		margin: -1px !important;
+		overflow: hidden !important;
+		clip: rect(0, 0, 0, 0) !important;
+		white-space: nowrap !important;
+		border-width: 0 !important;
+	}
+	
+}
+
+.line{
+	height: 5px;
+	width: 100%;
+	max-width: 150px;
+	background-color: var(--color-accent);
+	margin-block: 1.5rem;
+
+	@screen sm{
+		margin-block: 2rem;
+	}
+}
+
+.js-site-header.is-measuring,
+.js-site-header.is-measuring * {
+	transition: none !important;
+}
+
+.line {
+	background-color: var(--color-lightblue);
+}

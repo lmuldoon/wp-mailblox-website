@@ -1,0 +1,21 @@
+/**
+ * Button group.
+ * A group of buttons placed together in a row.
+ * Does not support wrapping.
+ */
+
+.button-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap:1.5rem;
+	@screen md {
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	&.centered {
+		justify-content: center;
+	}
+}
