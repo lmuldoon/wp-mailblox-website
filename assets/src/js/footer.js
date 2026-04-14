@@ -25,6 +25,10 @@ import {
 } from './scripts/animations';
 initAnimations();
 
+import { initEmailClient } from './scripts/email-client';
+initEmailClient();
+
+
 require('./scripts/init.tabs')
 require('./scripts/accordian-controller')
 import './scripts/lazyload-frame';

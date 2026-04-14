@@ -17,7 +17,7 @@ get_header();
      HERO
 ============================================= -->
 <div class="hero-wrapper">
-	<div class="hero hero--home parallax-up">
+	<div class="hero hero--home">
 		<div id="main-title" class="headline hero__content">
 			<div class="animated-up">
 				<p class="hero__eyebrow">WordPress Email Builder</p>
@@ -40,9 +40,7 @@ get_header();
 			</div>
 		</div>
 		<div class="hero-img">
-			<div class="img-placeholder" aria-hidden="true">
-				<span>Plugin screenshot</span>
-			</div>
+			<img src="/static/images/iphone_mockup_1.png?v=1" alt="iPhone newsletter email mockup" />
 		</div>
 	</div>
 </div>
@@ -63,9 +61,152 @@ get_header();
 	</div>
 
 	<!-- =============================================
+	     MOCK EMAIL CLIENT
+	============================================= -->
+	<div class="section section--email-client bg-darkblue">
+		<div class="container">
+
+			<div class="text-center mb-12 animated-up">
+				<h2 class="text-white">Built with WP Mailblox</h2>
+				<div class="line mx-auto"></div>
+				<p class="text-container mx-auto" style="color:rgba(255,255,255,0.7);">A sample of email templates designed entirely inside WordPress using the block editor. Click any message to preview it.</p>
+			</div>
+
+			<div class="email-client animated-up">
+
+				<!-- macOS-style chrome bar -->
+				<div class="email-client__chrome">
+					<div class="chrome-dots" aria-hidden="true">
+						<span class="chrome-dot chrome-dot--red"></span>
+						<span class="chrome-dot chrome-dot--yellow"></span>
+						<span class="chrome-dot chrome-dot--green"></span>
+					</div>
+					<span class="chrome-title">Inbox (10)</span>
+				</div>
+
+				<div class="email-client__body">
+
+					<!-- Inbox sidebar -->
+					<div class="email-client__sidebar" role="listbox" aria-label="Email inbox">
+
+						<div class="inbox-item is-active" role="option" aria-selected="true" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">AppVault Team</span>
+								<span class="inbox-item__time">10:24 am</span>
+							</div>
+							<div class="inbox-item__subject">Your Pro trial starts today</div>
+							<div class="inbox-item__preview">Thanks for signing up. Here's everything you need to get started with your first 14 days...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">DrivePoint Motors</span>
+								<span class="inbox-item__time">9:51 am</span>
+							</div>
+							<div class="inbox-item__subject">Your vehicle is ready for collection</div>
+							<div class="inbox-item__preview">Great news — your order #DPM-4821 has been confirmed and is ready at your local...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">B/FASHION Studio</span>
+								<span class="inbox-item__time">9:12 am</span>
+							</div>
+							<div class="inbox-item__subject">The Spring Edit — shop the new season</div>
+							<div class="inbox-item__preview">Our most-coveted new arrivals are here. Discover the pieces our stylists are loving right...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">CHIC Boutique</span>
+								<span class="inbox-item__time">8:47 am</span>
+							</div>
+							<div class="inbox-item__subject">Exclusive access: new collection tonight</div>
+							<div class="inbox-item__preview">As a valued member you get first look at our latest arrivals before they go live to...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">Grace Community</span>
+								<span class="inbox-item__time">Yesterday</span>
+							</div>
+							<div class="inbox-item__subject">This Sunday: Family Service &amp; BBQ</div>
+							<div class="inbox-item__preview">We're so excited to gather together this Sunday at 10am. Lunch will be served after the...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">The Honey Co.</span>
+								<span class="inbox-item__time">Yesterday</span>
+							</div>
+							<div class="inbox-item__subject">Raw, natural &amp; back in stock</div>
+							<div class="inbox-item__preview">Our small-batch wildflower honey has returned. Harvested this season from local hives in...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">Itsuki</span>
+								<span class="inbox-item__time">Mon</span>
+							</div>
+							<div class="inbox-item__subject">Your order has been dispatched</div>
+							<div class="inbox-item__preview">Great news! Your recent order is on its way and expected to arrive within 2–3 working...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">FORM Fitness</span>
+								<span class="inbox-item__time">Mon</span>
+							</div>
+							<div class="inbox-item__subject">New class schedule — book your spot</div>
+							<div class="inbox-item__preview">Your updated weekly timetable is live. HIIT, yoga, pilates and 5 brand new sessions...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">Meridian Property</span>
+								<span class="inbox-item__time">Sun</span>
+							</div>
+							<div class="inbox-item__subject">3 new listings match your search</div>
+							<div class="inbox-item__preview">Based on your saved criteria, we've found properties that could be perfect for you...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="false" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">Salt &amp; Stone</span>
+								<span class="inbox-item__time">Sun</span>
+							</div>
+							<div class="inbox-item__subject">This weekend's seasonal menu is here</div>
+							<div class="inbox-item__preview">Join us Saturday for our new tasting menu. Only 12 covers available each night, book...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+					</div><!-- /.email-client__sidebar -->
+
+					<!-- Email preview pane -->
+					<div class="email-client__preview" aria-live="polite" aria-label="Email preview">
+						<img class="email-preview__img" src="/static/images/email-examples/appy.jpg" alt="Email template preview">
+					</div><!-- /.email-client__preview -->
+
+				</div><!-- /.email-client__body -->
+
+			</div><!-- /.email-client -->
+
+		</div>
+	</div>
+
+	<!-- =============================================
 	     FEATURES GRID
 	============================================= -->
-	<div class="section bg-grey" id="features">
+	<div class="section" id="features">
 		<div class="container">
 			<div class="text-center mb-12 animated-up">
 				<h2>Everything you need to build great emails</h2>
@@ -128,7 +269,7 @@ get_header();
 	<!-- =============================================
 	     HOW IT WORKS
 	============================================= -->
-	<div class="section" id="how-it-works">
+	<div class="section bg-grey" id="how-it-works">
 		<div class="container">
 			<div class="text-center mb-12 animated-up">
 				<h2>Up and running in minutes</h2>

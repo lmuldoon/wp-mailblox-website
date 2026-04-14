@@ -12,7 +12,9 @@ global $meta;
 
 <head>
 	<!-- Swap no-js → js synchronously so CSS can pre-hide animated elements before first paint -->
-	<script>document.documentElement.classList.replace('no-js','js');</script>
+	<script>
+		document.documentElement.classList.replace('no-js', 'js');
+	</script>
 	<?php $DOMAIN = 'wp-mailblox.com';
 	$re = "/^(?:www\.)?" . str_replace('.', "\.", $DOMAIN) . "$/"; // escape dots
 	$IS_LIVE = preg_match($re, $_SERVER['SERVER_NAME']);
@@ -53,7 +55,12 @@ global $meta;
 	<meta name="description" content="<?php echo $meta->description; ?>">
 
 	<!-- Start Favicons -->
-	
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<meta name="apple-mobile-web-app-title" content="WP Mailblox" />
+	<link rel="manifest" href="/site.webmanifest" />
 	<!-- End Favicons -->
 
 	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('screen.css'); ?>">
