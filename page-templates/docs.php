@@ -60,7 +60,7 @@ get_header();
 			     GETTING STARTED
 			============================================= -->
 			<section class="docs-section" id="getting-started">
-				<div class="flow">
+				<div class="stack">
 					<h2>Getting Started</h2>
 					<p>WP Mailblox is a WordPress plugin that lets you design professional HTML email templates directly inside the WordPress block editor (Gutenberg). Instead of building emails in a separate tool or writing code by hand, you design them where you already manage your content.</p>
 					<p>Once your template is ready, you can:</p>
@@ -83,7 +83,7 @@ get_header();
 			     INSTALLATION
 			============================================= -->
 			<section class="docs-section" id="installation">
-				<div class="flow">
+				<div class="stack">
 					<h2>Installation</h2>
 
 					<h3>From the WordPress plugin directory</h3>
@@ -120,7 +120,7 @@ get_header();
 			     PRESETS
 			============================================= -->
 			<section class="docs-section" id="presets">
-				<div class="flow">
+				<div class="stack">
 					<h2>Creating a Preset</h2>
 					<p>Presets are the foundation of WP Mailblox. A Preset stores your brand configuration and is assigned to one or more email templates. The free plan supports one Preset; Pro supports unlimited.</p>
 
@@ -171,7 +171,7 @@ get_header();
 			     BUILDING AN EMAIL
 			============================================= -->
 			<section class="docs-section" id="building-email">
-				<div class="flow">
+				<div class="stack">
 					<h2>Building an Email Template</h2>
 
 					<h3>Creating a new template</h3>
@@ -211,7 +211,7 @@ get_header();
 			     AVAILABLE BLOCKS
 			============================================= -->
 			<section class="docs-section" id="blocks">
-				<div class="flow">
+				<div class="stack">
 					<h2>Available Blocks</h2>
 					<p>WP Mailblox provides a set of blocks specifically designed to produce valid, email-client-safe HTML. All blocks respect your Preset's typography and colour settings by default.</p>
 
@@ -361,7 +361,7 @@ get_header();
 			     MOBILE CONTROLS
 			============================================= -->
 			<section class="docs-section" id="mobile-controls">
-				<div class="flow">
+				<div class="stack">
 					<h2>Mobile Controls</h2>
 					<p>Most WP Mailblox blocks include a <strong>Mobile</strong> tab in their block settings panel. This lets you override the desktop layout on screens below your Preset's container width.</p>
 					<ul>
@@ -381,7 +381,7 @@ get_header();
 			     UTM TRACKING
 			============================================= -->
 			<section class="docs-section" id="utm-tracking">
-				<div class="flow">
+				<div class="stack">
 					<h2>UTM Tracking</h2>
 					<p>WP Mailblox can automatically append UTM parameters to all links in your exported email HTML. This makes it easy to track email campaign performance in Google Analytics or any UTM-aware analytics tool.</p>
 
@@ -410,7 +410,7 @@ get_header();
 			     DARK MODE
 			============================================= -->
 			<section class="docs-section" id="dark-mode">
-				<div class="flow">
+				<div class="stack">
 					<h2>Dark Mode</h2>
 					<p>WP Mailblox includes full dark mode support, using <code>prefers-color-scheme: dark</code> media queries alongside <code>[data-ogsc]</code> attribute selectors for Outlook compatibility.</p>
 
@@ -437,7 +437,7 @@ get_header();
 			     EXPORTING
 			============================================= -->
 			<section class="docs-section" id="exporting">
-				<div class="flow">
+				<div class="stack">
 					<h2>Exporting Your Email</h2>
 					<p>When your template is ready, use the <strong>Export Email</strong> metabox in the template sidebar.</p>
 
@@ -469,7 +469,7 @@ get_header();
 			     PLATFORM INTEGRATIONS
 			============================================= -->
 			<section class="docs-section" id="platform-integrations">
-				<div class="flow">
+				<div class="stack">
 					<h2>Platform Integrations</h2>
 					<p>Direct platform push is a <strong>Pro</strong> feature. It lets you send your finished template directly to your email platform without leaving WordPress. API credentials are stored in <strong>WP Mailblox → Settings → Platform Connections</strong>.</p>
 
@@ -478,7 +478,7 @@ get_header();
 					</div>
 
 					<!-- Mailchimp -->
-					<div class="docs-platform flow" id="platform-mailchimp">
+					<div class="docs-platform stack" id="platform-mailchimp">
 						<h3>Mailchimp</h3>
 						<p><strong>Required:</strong> Mailchimp API key</p>
 						<ol>
@@ -490,7 +490,7 @@ get_header();
 					</div>
 
 					<!-- Brevo -->
-					<div class="docs-platform flow" id="platform-brevo">
+					<div class="docs-platform stack" id="platform-brevo">
 						<h3>Brevo (formerly Sendinblue)</h3>
 						<p><strong>Required:</strong> Brevo API key, verified sender name and email address</p>
 						<ol>
@@ -501,7 +501,7 @@ get_header();
 					</div>
 
 					<!-- Klaviyo -->
-					<div class="docs-platform flow" id="platform-klaviyo">
+					<div class="docs-platform stack" id="platform-klaviyo">
 						<h3>Klaviyo</h3>
 						<p><strong>Required:</strong> Klaviyo Private API key</p>
 						<ol>
@@ -512,7 +512,7 @@ get_header();
 					</div>
 
 					<!-- Campaign Monitor -->
-					<div class="docs-platform flow" id="platform-campaignmonitor">
+					<div class="docs-platform stack" id="platform-campaignmonitor">
 						<h3>Campaign Monitor</h3>
 						<p><strong>Required:</strong> Campaign Monitor API key, Client ID</p>
 						<ol>
@@ -526,7 +526,7 @@ get_header();
 					</div>
 
 					<!-- ActiveCampaign -->
-					<div class="docs-platform flow" id="platform-activecampaign">
+					<div class="docs-platform stack" id="platform-activecampaign">
 						<h3>ActiveCampaign</h3>
 						<p><strong>Required:</strong> ActiveCampaign API token, Account URL</p>
 						<ol>
@@ -537,7 +537,7 @@ get_header();
 					</div>
 
 					<!-- HubSpot -->
-					<div class="docs-platform flow" id="platform-hubspot">
+					<div class="docs-platform stack" id="platform-hubspot">
 						<h3>HubSpot</h3>
 						<p><strong>Note:</strong> HubSpot's API does not currently support uploading raw HTML email templates. WP Mailblox generates HubSpot-compatible merge tags and provides HTML export for manual upload — direct push is not available for HubSpot.</p>
 						<p>To use your template in HubSpot:</p>
@@ -557,7 +557,7 @@ get_header();
 			     WOOCOMMERCE
 			============================================= -->
 			<section class="docs-section" id="woocommerce">
-				<div class="flow">
+				<div class="stack">
 					<h2>WooCommerce Blocks <span class="badge badge--pro">Pro</span></h2>
 					<p>WP Mailblox Pro includes four blocks that integrate directly with your WooCommerce store, letting you build transactional and promotional emails with live product data.</p>
 
@@ -587,7 +587,7 @@ get_header();
 			     FREE VS PRO
 			============================================= -->
 			<section class="docs-section" id="free-vs-pro">
-				<div class="flow">
+				<div class="stack">
 					<h2>Free vs Pro</h2>
 
 					<table class="docs-comparison-table">

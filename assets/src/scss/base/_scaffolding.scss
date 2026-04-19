@@ -133,9 +133,9 @@ table {
 
 // Introduce basic spacing between child elements
 // E.g. for WYSIWYG content wrappers
-.flow {
+.stack {
 	>*+* {
-		margin-top: var(--flow-space, 1em);
+		margin-top: var(--stack-space, 1em);
 	}
 	> :last-child {
 		margin-bottom:0 !important;

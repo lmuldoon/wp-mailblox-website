@@ -1,0 +1,32 @@
+.stack {
+	> * + * {
+		margin-block-start: var(--stack-space, 1em);
+	}
+
+	:is(h1, h2, h3) {
+		--stack-space: var(--size-700);
+
+		+ * {
+			--stack-space: var(--size-400);
+		}
+	}
+
+	figure,
+	figure + * {
+		--stack-space: var(--size-1000);
+	}
+
+	table,
+	table + * {
+		--stack-space: var(--size-900);
+	}
+}
+
+.single-post{
+	.stack{
+		div.ratio, 
+		div.ratio + * {
+			--stack-space: var(--size-1000);
+		}
+	}
+}

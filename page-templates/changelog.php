@@ -34,7 +34,7 @@ get_header();
 						<span class="changelog-entry__date">April 2025</span>
 						<span class="badge badge--release">Initial Release</span>
 					</div>
-					<div class="flow changelog-entry__body">
+					<div class="stack changelog-entry__body">
 						<p>First public release of WP Mailblox.</p>
 
 						<h3>Features</h3>
@@ -56,7 +56,7 @@ get_header();
 							<li>Subject line and preheader fields with character counters</li>
 							<li>HTML export — download and copy to clipboard</li>
 							<li>Direct platform push to Mailchimp, Brevo, Klaviyo, Campaign Monitor and ActiveCampaign (Pro)</li>
-							<li>HubSpot merge tag support with HTML export workflow</li>
+							<li>HubSpot merge tag support with HTML export workstack</li>
 							<li>Template preview page</li>
 							<li>Starter template library (Blank, Newsletter, Promotional, Two-column, Transactional)</li>
 							<li>Save-as-template with tag support</li>
