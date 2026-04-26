@@ -56,7 +56,7 @@ get_header();
 				<h4>Cookie consent</h4>
 				<p>We use <strong>CookieHub</strong> to manage cookie consent on this site. When you first visit, a banner will invite you to accept or decline non-essential cookies. You can review or change your preferences at any time using the button below.</p>
 
-				<p><button type="button" class="button button--outline button--sm" onclick="CookieHub.openSettings(); return false;">Manage Cookie Preferences</button></p>
+				<p><a class="button button--outline button--sm" href="javascript:void 0" onclick="window.cookiehub.openSettings(); document.querySelector('[href=\'#ch2-declaration\']').click();">Manage Cookie Preferences</a></p>
 
 				<h4>Contact and enquiries</h4>
 				<p>If you contact us via a form or email, we retain your message and contact details solely for the purpose of responding to your enquiry. We do not sell or share your personal information with third parties.</p>
