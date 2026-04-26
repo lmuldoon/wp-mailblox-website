@@ -48,7 +48,18 @@ get_header();
 				<h2>Privacy Policy</h2>
 
 				<h3>This website (wpmailblox.com)</h3>
-				<p>This site does not use cookies, tracking scripts or analytics unless explicitly stated. If you contact us via a form or email, we retain your message and contact details only for the purpose of responding to your enquiry. We do not sell or share your personal information with third parties.</p>
+				<p>This site uses cookies and similar technologies. Some are strictly necessary for the site to function; others are used for analytics purposes to help us understand how visitors use the site and how we can improve it.</p>
+
+				<h4>Analytics</h4>
+				<p>We use <strong>Google Analytics</strong> to collect anonymised data about site usage — such as pages visited, time on site, and general geographic region. This data is aggregated and does not identify you personally. Google Analytics cookies are only set if you have consented to analytics cookies. For more information on how Google handles data collected via Analytics, see <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+
+				<h4>Cookie consent</h4>
+				<p>We use <strong>CookieHub</strong> to manage cookie consent on this site. When you first visit, a banner will invite you to accept or decline non-essential cookies. You can review or change your preferences at any time using the button below.</p>
+
+				<p><button type="button" class="button button--outline button--sm" onclick="CookieHub.openSettings(); return false;">Manage Cookie Preferences</button></p>
+
+				<h4>Contact and enquiries</h4>
+				<p>If you contact us via a form or email, we retain your message and contact details solely for the purpose of responding to your enquiry. We do not sell or share your personal information with third parties.</p>
 
 				<h3>The WP Mailblox plugin</h3>
 				<p>The WP Mailblox plugin itself does not collect, transmit or store any personal data from your website visitors. It operates entirely within your WordPress installation.</p>
