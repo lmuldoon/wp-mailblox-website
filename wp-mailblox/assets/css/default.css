@@ -1,0 +1,117 @@
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+v * {
+    behavior: url(#default#VML);
+    display: inline-block;
+    border: 0px;
+}
+
+.ExternalClass * {
+    line-height: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    border: 0px;
+    margin-top: 0px;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+table table table {
+    table-layout: auto;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+*[x-apple-data-detectors],
+.x-gmail-data-detectors,
+.x-gmail-data-detectors *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+img.g-img+div {
+    display: none !important;
+}
+
+.button-link {
+    text-decoration: none !important;
+}
+
+div>u~div .gmail {
+    min-width: 100vw;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+@media screen and (max-width: 480px) {
+    .fluid {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .no-pad-h {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+}
+
+#body #dd-address * {
+    color: #98C9D9 !important;
+    -webkit-text-decoration-color: #98C9D9 !important;
+    text-decoration: none !important;
+}

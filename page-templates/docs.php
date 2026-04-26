@@ -15,7 +15,7 @@ get_header();
 
 <article class="docs-page">
 
-	<div class="docs-header section bg-darkblue">
+	<div class="sections-header section bg-darkblue">
 		<div class="container">
 			<div class="animated-up">
 				<h1 class="text-white">Documentation</h1>
@@ -37,6 +37,7 @@ get_header();
 				<li><a href="#mobile-controls" class="docs-nav__link">Mobile Controls</a></li>
 				<li><a href="#utm-tracking" class="docs-nav__link">UTM Tracking</a></li>
 				<li><a href="#dark-mode" class="docs-nav__link">Dark Mode</a></li>
+				<li><a href="#editor-toolbar" class="docs-nav__link">Editor Toolbar</a></li>
 				<li><a href="#exporting" class="docs-nav__link">Exporting Your Email</a></li>
 				<li><a href="#platform-integrations" class="docs-nav__link">Platform Integrations</a>
 					<ul class="docs-nav docs-nav--sub">
@@ -44,8 +45,12 @@ get_header();
 						<li><a href="#platform-brevo" class="docs-nav__link">Brevo</a></li>
 						<li><a href="#platform-klaviyo" class="docs-nav__link">Klaviyo</a></li>
 						<li><a href="#platform-campaignmonitor" class="docs-nav__link">Campaign Monitor</a></li>
+						<li><a href="#platform-onesignal" class="docs-nav__link">OneSignal</a></li>
 						<li><a href="#platform-activecampaign" class="docs-nav__link">ActiveCampaign</a></li>
 						<li><a href="#platform-hubspot" class="docs-nav__link">HubSpot</a></li>
+						<li><a href="#platform-emailoctopus" class="docs-nav__link">EmailOctopus</a></li>
+						<li><a href="#platform-getresponse" class="docs-nav__link">GetResponse</a></li>
+						<li><a href="#platform-convertkit" class="docs-nav__link">ConvertKit</a></li>
 					</ul>
 				</li>
 				<li><a href="#woocommerce" class="docs-nav__link">WooCommerce Blocks <span class="badge badge--pro">Pro</span></a></li>
@@ -72,7 +77,7 @@ get_header();
 					<p>WP Mailblox uses a <strong>Preset</strong> system to store your brand settings — logo, colours, fonts, and platform choice. Assign a Preset to any email template and it automatically inherits your brand. Update the Preset and all associated templates update with it.</p>
 
 					<div class="docs-callout docs-callout--info">
-						<strong>Who is this for?</strong> WP Mailblox is designed for WordPress site owners, developers and agencies who want to design emails in a familiar environment and maintain brand consistency without paying for a dedicated email design platform.
+						<strong>Who is this for?</strong> WP Mailblox is built for WordPress users who want full control over their email design workflow. Create emails using your own hosted assets, keep branding consistent with your website, and export clean HTML that works with any email platform — without relying on third-party builders.
 					</div>
 				</div>
 			</section>
@@ -189,12 +194,13 @@ get_header();
 						<li><strong>Platform Override</strong> — Optionally override the Preset's platform for this template only.</li>
 						<li><strong>Subject line</strong> — The email subject (up to 200 characters). Required before export.</li>
 						<li><strong>Preheader text</strong> — The preview text shown next to the subject in the inbox (40–130 characters recommended). Required before export.</li>
-						<li><strong>Preview Email</strong> — Opens a full-page preview of the rendered template (requires a Preset to be assigned).</li>
 						<li><strong>Dark Mode Override</strong> — Set a specific dark mode background colour for this template, overriding the Preset's default.</li>
-						<li><strong>Save as Template</strong> — Save the current design as a reusable template with a name and optional tag.</li>
 						<li><strong>UTM Defaults</strong> — Set default UTM parameters (source, medium, campaign, content, term) that are appended to all links in the template.</li>
-						<li><strong>Export Email</strong> — Download HTML, copy to clipboard, or push to your connected platform (Pro).</li>
 					</ul>
+
+					<div class="docs-callout docs-callout--info">
+						<strong>Note:</strong> Preview, Send Test Email, Save as Template, and Export have moved to the top toolbar. See <a href="#editor-toolbar">Editor Toolbar</a> for details.
+					</div>
 
 					<h3>Adding blocks</h3>
 					<p>Click the <strong>+</strong> icon in the editor to add WP Mailblox blocks. All blocks specific to the plugin are grouped under the <strong>WP Mailblox</strong> category in the block inserter.</p>
@@ -226,18 +232,28 @@ get_header();
 
 						<div class="docs-block-row">
 							<div><strong>Section</strong></div>
-							<div>Full-width container block. All other blocks must sit inside a Section. Controls the background — solid colour, gradient or image.</div>
-							<div>Background colour / image, padding (top/bottom/left/right), dark mode background override</div>
+							<div>Full-width container block. All other blocks must sit inside a Section. Controls the background — solid colour or image.</div>
+							<div>Background colour (solid) or background image (repeat, position, size); dark mode background colour override (4 preset swatches); padding top/bottom; mobile padding overrides, hide on mobile; Save as Reusable Module button <span class="badge badge--pro">Pro</span></div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Columns</strong></div>
-							<div>Splits the section into 2, 3 or 4 equal columns. Uses MSO-safe ghost tables for Outlook compatibility.</div>
-							<div>Number of columns (2–4), column gap, mobile stack behaviour</div>
+							<div>Splits the layout into 1–4 columns. Uses MSO ghost-table technique for full Outlook compatibility.</div>
+							<div>Number of columns (1–4); gap between columns (0–60 px); column width distribution (drag bar, reset to equal); reverse column order (2-column only); background colour or image; dark mode background override; padding all 4 sides; per-corner border radius TL/TR/BL/BR; desktop and mobile overrides; hide on mobile</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Column</strong></div>
+							<div>Individual column inside a Columns block. Styled independently from its siblings.</div>
+							<div>Background colour or background image; dark mode background override; padding all 4 sides; per-corner border radius TL/TR/BL/BR; border width and colour; desktop and mobile overrides</div>
 						</div>
 					</div>
 
 					<h3>Content blocks</h3>
+
+					<div class="docs-callout docs-callout--tip">
+						<strong>Merge tags in Header, Subheader, and Text blocks.</strong> The Header, Subheader, and Text blocks support personalisation merge tags from your assigned platform — for example, inserting a subscriber's first name or a dynamic coupon code. While editing one of these blocks, click the <strong>merge tag</strong> button in the block toolbar to browse and insert the available tags for your platform. The tags that appear are determined by the platform set in your Preset (or the template's Platform Override).
+					</div>
 
 					<div class="docs-block-table">
 						<div class="docs-block-row docs-block-row--header">
@@ -249,73 +265,85 @@ get_header();
 						<div class="docs-block-row">
 							<div><strong>Header</strong></div>
 							<div>Large heading text. Inherits heading typography from your Preset.</div>
-							<div>Text, alignment, font size override, colour override</div>
+							<div>Text colour override; disable dark mode text colour adjustment; alignment (left / centre / right); padding all 4 sides; mobile alignment override, mobile padding overrides, hide on mobile; merge tag insertion (toolbar)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Subheader</strong></div>
 							<div>Secondary heading. Inherits subheading typography from your Preset.</div>
-							<div>Text, alignment, font size override, colour override</div>
+							<div>Text colour override; disable dark mode text colour adjustment; alignment (left / centre / right); padding all 4 sides; mobile alignment override, mobile padding overrides, hide on mobile; merge tag insertion (toolbar)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Text</strong></div>
-							<div>Body paragraph text with basic rich-text formatting (bold, italic, links).</div>
-							<div>Text content, alignment, font size override, colour override, link colour override</div>
+							<div>Body paragraph text with rich-text formatting (bold, italic, links).</div>
+							<div>Text colour override; disable dark mode text colour adjustment; alignment (left / centre / right); padding all 4 sides; mobile alignment override, mobile padding overrides, hide on mobile; merge tag insertion (toolbar)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Image</strong></div>
-							<div>Responsive email image. Outputs a properly structured <code>&lt;img&gt;</code> with width, height and alt attributes for email client compatibility.</div>
-							<div>Image URL, alt text, link URL, width, alignment</div>
+							<div>Responsive email image with full alt-text and link support.</div>
+							<div>Upload / select image; alt text (warning if missing); display width (px); dark mode image override; link URL; alignment; padding all 4 sides; per-corner border radius TL/TR/BL/BR; border width and colour; mobile alignment, padding, border radius/width/colour, hide on mobile; UTM parameters (source, medium, campaign, content, term)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Button</strong></div>
-							<div>Call-to-action button using a table-based structure for Outlook compatibility.</div>
-							<div>Label, URL, background colour, text colour, border radius, alignment, width</div>
+							<div>CTA button using a table-based structure for Outlook compatibility.</div>
+							<div>Label text; URL (text input, post/page search, or merge tag); background colour; text colour; alignment (left / centre / right); padding all 4 sides; border radius (0–50 px); border width (0–10 px) and border colour; mobile — all styling properties independently overridable, hide on mobile; UTM parameters (source, medium, campaign, content, term)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Divider</strong></div>
 							<div>Horizontal rule for visual separation between content sections.</div>
-							<div>Colour, height, width percentage, alignment</div>
+							<div>Line colour; thickness (1–10 px); spacing (desktop); mobile spacing override, hide on mobile</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Spacer</strong></div>
-							<div>Empty vertical space block. Useful for fine-tuning layout spacing without padding hacks.</div>
-							<div>Height (desktop), height (mobile)</div>
+							<div>Empty vertical space block for fine-tuning layout spacing.</div>
+							<div>Spacing height (desktop); background colour; dark mode background colour; mobile spacing override, hide on mobile</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Logo</strong></div>
-							<div>Renders your Preset's logo image automatically. Switches to dark logo when dark mode is active.</div>
-							<div>Width, alignment, link URL override</div>
+							<div>Renders your Preset's logo. Switches to dark logo automatically when dark mode is active.</div>
+							<div>Logo image override (overrides Preset logo for this instance); alt text; link URL; dark mode logo override; width (50–600 px); alignment; padding all 4 sides; mobile alignment, padding overrides, hide on mobile</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Menu</strong></div>
-							<div>Horizontal navigation links — typically used in the email header. Outputs inline-block links spaced with a separator character.</div>
-							<div>Menu items (label + URL), separator character, colour, font size</div>
+							<div>Horizontal navigation links — typically used in the email header.</div>
+							<div>Menu items (label + URL, add/remove); alignment; font size (10–24 px); text colour; separator width and colour; padding all 4 sides; mobile alignment, font size, padding overrides, hide on mobile; UTM parameters (source, medium, campaign, content, term)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Social</strong></div>
-							<div>Row of social media icon links. Includes commonly used platforms with built-in icons.</div>
-							<div>Platform list, icon colour, icon size, alignment</div>
+							<div>Row of social media icon links. Supports Facebook, Instagram, X, LinkedIn, YouTube, TikTok, Pinterest, and Threads.</div>
+							<div>Platform URLs (Facebook, Instagram, X, LinkedIn, YouTube, TikTok, Pinterest, Threads); drag to reorder; alignment; icon size (16–64 px); icon spacing (0–32 px); badge shape (circle / rounded square / square); badge padding (0–12 px); badge colour; mobile alignment, icon size override, hide on mobile</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Footer</strong></div>
 							<div>Pre-structured email footer with unsubscribe link, address, and platform-specific merge tags injected automatically.</div>
-							<div>Address text, custom footer copy, unsubscribe label</div>
+							<div>Show/hide unsubscribe link + link text; show/hide "View this email online" link + link text; physical address; footer text; text colour</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Video</strong></div>
+							<div>Email-safe video block — embeds a linked thumbnail image since video cannot play inline in most email clients.</div>
+							<div>YouTube or Vimeo URL (thumbnail fetched automatically); custom thumbnail override; alignment; border radius (0–40 px); show play button toggle + play button colour; show caption toggle + caption text; padding all 4 sides; mobile padding overrides, hide on mobile; UTM parameters (source, medium, campaign, content, term)</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Conditional</strong></div>
+							<div>Wraps content in a platform-specific conditional merge tag so it only renders for certain subscribers. Only available when the template is set to a compatible platform.</div>
+							<div>Condition field (platform merge field)</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>HTML <span class="badge badge--pro">Pro</span></strong></div>
 							<div>Insert raw HTML directly into the email. Useful for custom components, external snippets or platform-specific code.</div>
-							<div>Raw HTML input</div>
+							<div>Raw HTML textarea</div>
 						</div>
 					</div>
 
@@ -331,25 +359,19 @@ get_header();
 						<div class="docs-block-row">
 							<div><strong>Product</strong></div>
 							<div>Displays a single product with image, title, price and CTA button. Search and select from your WooCommerce store.</div>
-							<div>Product search, image display, button label, button URL</div>
+							<div>Product search; product URL override; button label text; show price toggle; show description toggle; image alignment; button colour and text colour; button padding all 4 sides; button border radius, width, and colour; mobile image alignment, padding, button border radius/width/colour; disable dark mode text colour</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Order Table</strong></div>
 							<div>Renders a transactional order summary table with item rows, subtotal, shipping and total. Uses platform merge tags for dynamic order data.</div>
-							<div>Column labels, colour scheme, alternating row colours</div>
-						</div>
-
-						<div class="docs-block-row">
-							<div><strong>Product Recommendations</strong></div>
-							<div>Grid of products pulled from your store, filterable by category. Ideal for upsell and cross-sell sections.</div>
-							<div>Product count, columns (2–4), category filter, sort order</div>
+							<div>Show/hide subtotal, discount, tax, shipping, total rows; show view order button + button text; header background and text colour; border colour; alternate row colour; text colour; font size (desktop and mobile); button colour, text colour, border radius, padding, border width/colour; padding all 4 sides (desktop + mobile); disable dark mode text colour</div>
 						</div>
 
 						<div class="docs-block-row">
 							<div><strong>Coupon</strong></div>
 							<div>Displays a styled coupon code block with a prominent code and optional expiry/description text.</div>
-							<div>Coupon code text, description, background colour, border style</div>
+							<div>Title, description, coupon code, expiry text; box background and text colour; code box background and code text colour; dark mode box and code box background; alignment (desktop + mobile); padding all 4 sides (desktop + mobile); border colour, style (solid/dashed/dotted), width, radius; mobile border radius, width, and colour overrides</div>
 						</div>
 					</div>
 				</div>
@@ -425,8 +447,51 @@ get_header();
 					<h3>Dark logo</h3>
 					<p>If you've uploaded a dark mode logo in your Preset, the Logo block will automatically swap to it when dark mode is active. This is handled via <code>display: none</code> / <code>display: block</code> swapping with appropriate selectors for each email client.</p>
 
+					<div class="docs-callout docs-callout--tip">
+						<strong>Always pair light backgrounds with a dark mode override.</strong> If a Section or Columns block has a custom background colour set for light mode — particularly a white or light grey — be sure to set its dark mode background colour as well. Without an override, those blocks will retain their light background in dark mode, which can result in light-on-light text and make your content unreadable. As a rule of thumb: any block where you have explicitly set a background colour should also have a dark mode background colour defined.
+					</div>
+
 					<div class="docs-callout docs-callout--info">
 						Not all email clients support dark mode. Gmail on Android and iOS, Apple Mail, and Outlook on Mac are among those that do. Always test your dark mode designs across clients before sending.
+					</div>
+				</div>
+			</section>
+
+			<hr>
+
+			<!-- =============================================
+			     EDITOR TOOLBAR
+			============================================= -->
+			<section class="docs-section" id="editor-toolbar">
+				<div class="stack">
+					<h2>Editor Toolbar</h2>
+					<p>The top toolbar of the email editor contains four action buttons specific to WP Mailblox. These apply to the whole template and are always accessible regardless of which block is selected.</p>
+
+					<div class="docs-block-table docs-block-table--two-col">
+						<div class="docs-block-row docs-block-row--header">
+							<div>Button</div>
+							<div>Description</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Preview</strong></div>
+							<div>Opens a full-width preview of the rendered email in the editor canvas. Toggles between desktop and mobile view. Requires a Preset to be assigned before it can render.</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Send Test Email</strong></div>
+							<div>Sends a rendered copy of the current template to a specified email address. Use this to test how your email looks across different clients and devices before sending to your list.</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Save as Template</strong></div>
+							<div>Saves the current email design as a reusable saved template. Enter a name and optional tag in the modal that appears. Saved templates appear in the template chooser when creating a new email.</div>
+						</div>
+
+						<div class="docs-block-row">
+							<div><strong>Export</strong></div>
+							<div>Opens the export modal — download HTML, copy to clipboard, or push directly to your connected platform <span class="badge badge--pro">Pro</span>. WP Mailblox runs validation checks (missing subject, preheader, preset, localhost image URLs) and shows warnings before export.</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -439,7 +504,7 @@ get_header();
 			<section class="docs-section" id="exporting">
 				<div class="stack">
 					<h2>Exporting Your Email</h2>
-					<p>When your template is ready, use the <strong>Export Email</strong> metabox in the template sidebar.</p>
+					<p>When your template is ready, click the <strong>Export</strong> button in the top toolbar of the editor.</p>
 
 					<h3>Export options</h3>
 					<ul>
@@ -458,7 +523,7 @@ get_header();
 					</ul>
 
 					<div class="docs-callout docs-callout--tip">
-						<strong>Tip:</strong> Use the <strong>Preview Email</strong> link in the sidebar to check how your template renders before exporting. The preview opens in a new tab and renders the live template output.
+						<strong>Tip:</strong> Use the <strong>Preview</strong> button in the toolbar to check how your template renders before exporting. You can also send a test to an inbox using <strong>Send Test Email</strong>.
 					</div>
 				</div>
 			</section>
@@ -525,14 +590,27 @@ get_header();
 						</div>
 					</div>
 
+					<!-- OneSignal -->
+					<div class="docs-platform stack" id="platform-onesignal">
+						<h3>OneSignal</h3>
+						<p><strong>Required:</strong> OneSignal REST API key</p>
+						<ol>
+							<li>In your OneSignal dashboard, go to <strong>Settings → Keys &amp; IDs</strong>.</li>
+							<li>Copy the <strong>REST API Key</strong>.</li>
+							<li>Paste it into <strong>WP Mailblox → Settings → Platform Connections → OneSignal REST API Key</strong>.</li>
+						</ol>
+						<p>When you push a template, WP Mailblox creates (or updates) an email template in your OneSignal account.</p>
+					</div>
+
 					<!-- ActiveCampaign -->
 					<div class="docs-platform stack" id="platform-activecampaign">
 						<h3>ActiveCampaign</h3>
-						<p><strong>Required:</strong> ActiveCampaign API token, Account URL</p>
+						<p><strong>Note:</strong> ActiveCampaign's API does not currently support uploading raw HTML email templates. WP Mailblox generates ActiveCampaign-compatible merge tags and provides HTML export for manual upload — direct push is not available for ActiveCampaign.</p>
+						<p>To use your template in ActiveCampaign:</p>
 						<ol>
-							<li>In ActiveCampaign, go to <strong>Settings → Developer → API Access</strong>.</li>
-							<li>Copy your <strong>API URL</strong> (e.g. <code>https://youraccountname.api-us1.com</code>) and your <strong>API Key</strong>.</li>
-							<li>Enter both in <strong>WP Mailblox → Settings → Platform Connections</strong>.</li>
+							<li>Export the HTML from WP Mailblox (download or copy).</li>
+							<li>In ActiveCampaign, go to <strong>Campaigns → Templates</strong>.</li>
+							<li>Create a new template using the <strong>HTML</strong> option and paste in the exported code.</li>
 						</ol>
 					</div>
 
@@ -548,6 +626,42 @@ get_header();
 						</ol>
 					</div>
 
+					<!-- EmailOctopus -->
+					<div class="docs-platform stack" id="platform-emailoctopus">
+						<h3>EmailOctopus</h3>
+						<p><strong>Note:</strong> EmailOctopus supports custom HTML templates via manual import — direct push is not available. WP Mailblox generates EmailOctopus-compatible merge tags so dynamic fields work correctly when you import the template.</p>
+						<p>To use your template in EmailOctopus:</p>
+						<ol>
+							<li>Export the HTML from WP Mailblox (download or copy).</li>
+							<li>In EmailOctopus, go to <strong>Templates</strong> and click <strong>New template → Import HTML</strong>.</li>
+							<li>Paste in the exported HTML and save.</li>
+						</ol>
+					</div>
+
+					<!-- GetResponse -->
+					<div class="docs-platform stack" id="platform-getresponse">
+						<h3>GetResponse</h3>
+						<p><strong>Note:</strong> GetResponse supports custom HTML templates — direct push is not available. WP Mailblox generates GetResponse-compatible merge tags so dynamic fields work correctly when you import the template.</p>
+						<p>To use your template in GetResponse:</p>
+						<ol>
+							<li>Export the HTML from WP Mailblox (download or copy).</li>
+							<li>In GetResponse, go to <strong>Email Marketing → Templates → Create template</strong>.</li>
+							<li>Choose the <strong>HTML editor</strong> option and paste in the exported code.</li>
+						</ol>
+					</div>
+
+					<!-- ConvertKit -->
+					<div class="docs-platform stack" id="platform-convertkit">
+						<h3>ConvertKit (Kit)</h3>
+						<p><strong>Note:</strong> ConvertKit supports custom HTML emails — direct push is not available. WP Mailblox generates ConvertKit-compatible merge tags so personalisation fields work correctly when you use the template.</p>
+						<p>To use your template in ConvertKit:</p>
+						<ol>
+							<li>Export the HTML from WP Mailblox (download or copy).</li>
+							<li>In ConvertKit, create a new broadcast or sequence email.</li>
+							<li>Select <strong>HTML</strong> as the email type and paste in the exported code.</li>
+						</ol>
+					</div>
+
 				</div>
 			</section>
 
@@ -559,7 +673,7 @@ get_header();
 			<section class="docs-section" id="woocommerce">
 				<div class="stack">
 					<h2>WooCommerce Blocks <span class="badge badge--pro">Pro</span></h2>
-					<p>WP Mailblox Pro includes four blocks that integrate directly with your WooCommerce store, letting you build transactional and promotional emails with live product data.</p>
+					<p>WP Mailblox Pro includes three blocks that integrate directly with your WooCommerce store, letting you build transactional and promotional emails with live product data.</p>
 
 					<p><strong>Requirement:</strong> WooCommerce must be installed and active to use these blocks.</p>
 
@@ -568,9 +682,6 @@ get_header();
 
 					<h3>Order Table block</h3>
 					<p>Renders a structured order summary for transactional emails (order confirmations, shipping notifications). The table is populated with platform-specific merge tags so the order data is dynamically injected at send time. Supports alternating row colours and customisable column labels.</p>
-
-					<h3>Product Recommendations block</h3>
-					<p>Displays a grid of products from your store — filterable by category and sortable by date, price or popularity. Use this in promotional emails to showcase related or recommended products. Configure the number of products (up to 12) and the number of columns (2–4).</p>
 
 					<h3>Coupon block</h3>
 					<p>Displays a styled coupon code with optional description and expiry text. The coupon code itself is static text — you enter the code you want to promote.</p>
@@ -645,12 +756,17 @@ get_header();
 								<td>✓</td>
 							</tr>
 							<tr>
-								<td>Direct platform push (6 platforms)</td>
+								<td>Direct platform push (5 platforms)</td>
 								<td>—</td>
 								<td>✓</td>
 							</tr>
 							<tr>
 								<td>Multiple Presets</td>
+								<td>—</td>
+								<td>✓</td>
+							</tr>
+							<tr>
+								<td>Reusable section modules</td>
 								<td>—</td>
 								<td>✓</td>
 							</tr>

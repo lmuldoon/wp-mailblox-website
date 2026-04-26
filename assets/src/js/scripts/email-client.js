@@ -15,6 +15,7 @@ export function initEmailClient() {
 	if (!previewPane || !previewImg) return;
 
 	const images = [
+		'/static/images/email-examples/bright-n-light.jpg',
 		'/static/images/email-examples/appy.jpg',
 		'/static/images/email-examples/automotive.jpg',
 		'/static/images/email-examples/b-fashion.jpg',

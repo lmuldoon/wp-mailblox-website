@@ -1,0 +1,8 @@
+.eb-button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0073aa;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}

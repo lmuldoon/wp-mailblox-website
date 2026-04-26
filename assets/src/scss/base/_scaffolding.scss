@@ -38,7 +38,7 @@ body {
  */
  h1, h2, h3, h4,
  .h1, .h2, .h3, .h4 {
-	 @apply font-heading font-medium leading-tight;
+	 @apply font-heading font-bold leading-tight;
 	color: var(--color-accent);
 	
  }

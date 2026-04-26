@@ -17,6 +17,7 @@ export function initAnimations() {
 	setUpHeader();
 	setUpFooter();
 
+	createHeroBlocks();
 	animateHero();
 	animateElements();
 	animatePricingCards();
@@ -68,6 +69,149 @@ function setUpFooter() {
 	}
 
 	storeFooterHeight();
+}
+
+
+// ─── HERO BLOCKS ───────────────────────────────────────────────────────────────
+// Slowly falling isometric cubes — echoes the block-based logo concept.
+// Drawn on a canvas injected behind all hero content.
+
+function createHeroBlocks() {
+	const wrapper = document.querySelector('.hero-wrapper');
+	if (!wrapper) return;
+
+	const canvas = document.createElement('canvas');
+	canvas.id = 'hero-blocks';
+	canvas.setAttribute('aria-hidden', 'true');
+	wrapper.insertBefore(canvas, wrapper.firstChild);
+
+	const ctx = canvas.getContext('2d');
+
+	// Brand-palette cube colors [r, g, b]
+	const PALETTES = [
+		[2,  116, 165],   // #0274a5 – mid blue
+		[2,  172, 233],   // #02ace9 – light blue
+		[14,  44,  72],   // slightly lighter than darkblue
+	];
+
+	let W, H, blocks = [];
+
+	function resize() {
+		W = canvas.width  = wrapper.offsetWidth;
+		H = canvas.height = wrapper.offsetHeight;
+	}
+
+	// Isometric cube centered at (cx, cy) with half-size s
+	function drawIsoCube(cx, cy, s, rgb, alpha) {
+		const [r, g, b] = rgb;
+		const c = 0.866; // cos(30°)
+
+		const top = [cx,       cy - s      ];
+		const tr  = [cx + s*c, cy - s*0.5  ];
+		const br  = [cx + s*c, cy + s*0.5  ];
+		const bot = [cx,       cy + s      ];
+		const bl  = [cx - s*c, cy + s*0.5  ];
+		const tl  = [cx - s*c, cy - s*0.5  ];
+		const ctr = [cx,       cy          ];
+
+		// Top face — brightest
+		ctx.beginPath();
+		ctx.moveTo(top[0], top[1]);
+		ctx.lineTo(tr[0],  tr[1]);
+		ctx.lineTo(ctr[0], ctr[1]);
+		ctx.lineTo(tl[0],  tl[1]);
+		ctx.closePath();
+		ctx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
+		ctx.fill();
+
+		// Right face — medium
+		ctx.beginPath();
+		ctx.moveTo(tr[0],  tr[1]);
+		ctx.lineTo(br[0],  br[1]);
+		ctx.lineTo(bot[0], bot[1]);
+		ctx.lineTo(ctr[0], ctr[1]);
+		ctx.closePath();
+		ctx.fillStyle = `rgba(${r},${g},${b},${alpha * 0.6})`;
+		ctx.fill();
+
+		// Left face — darkest
+		ctx.beginPath();
+		ctx.moveTo(tl[0],  tl[1]);
+		ctx.lineTo(ctr[0], ctr[1]);
+		ctx.lineTo(bot[0], bot[1]);
+		ctx.lineTo(bl[0],  bl[1]);
+		ctx.closePath();
+		ctx.fillStyle = `rgba(${r},${g},${b},${alpha * 0.35})`;
+		ctx.fill();
+
+		// Top-edge highlight
+		ctx.strokeStyle = `rgba(${r},${g},${b},${alpha * 0.55})`;
+		ctx.lineWidth = 0.6;
+		ctx.beginPath();
+		ctx.moveTo(top[0], top[1]);
+		ctx.lineTo(tr[0],  tr[1]);
+		ctx.lineTo(ctr[0], ctr[1]);
+		ctx.lineTo(tl[0],  tl[1]);
+		ctx.closePath();
+		ctx.stroke();
+	}
+
+	function makeBlock(preplaced) {
+		const rgb = PALETTES[Math.floor(Math.random() * PALETTES.length)];
+		const s   = 55 + Math.random() * 65; // 55–120 px half-size
+		return {
+			x:     Math.random() * W,
+			y:     preplaced ? Math.random() * H : -s * 2 - Math.random() * H * 0.4,
+			vx:    (Math.random() - 0.5) * 0.1,
+			vy:    0.08 + Math.random() * 0.16,
+			s,
+			rgb,
+			alpha: 0.055 + Math.random() * 0.105,
+		};
+	}
+
+	function targetCount() {
+		return Math.min(Math.floor(W * H / 20000), 34);
+	}
+
+	function tick() {
+		ctx.clearRect(0, 0, W, H);
+
+		for (const b of blocks) {
+			drawIsoCube(b.x, b.y, b.s, b.rgb, b.alpha);
+			b.x += b.vx;
+			b.y += b.vy;
+
+			if (b.y - b.s * 1.2 > H) {
+				b.x  = Math.random() * W;
+				b.y  = -b.s * 2;
+				b.vx = (Math.random() - 0.5) * 0.1;
+				b.vy = 0.08 + Math.random() * 0.16;
+			}
+			if (b.x < -b.s * 2)    b.x = W + b.s;
+			if (b.x > W + b.s * 2) b.x = -b.s;
+		}
+
+		// Vignette — darkens corners so text area stays crisp
+		const vg = ctx.createRadialGradient(W * 0.5, H * 0.5, H * 0.15, W * 0.5, H * 0.5, H * 0.85);
+		vg.addColorStop(0, 'rgba(6,15,30,0)');
+		vg.addColorStop(1, 'rgba(6,15,30,0.52)');
+		ctx.fillStyle = vg;
+		ctx.fillRect(0, 0, W, H);
+
+		requestAnimationFrame(tick);
+	}
+
+	resize();
+	blocks = Array.from({ length: targetCount() }, () => makeBlock(true));
+	tick();
+
+	window.addEventListener('resize', debounce(() => {
+		resize();
+		const c = targetCount();
+		while (blocks.length < c) blocks.push(makeBlock(true));
+		if (blocks.length > c + 4) blocks.length = c;
+	}, 250));
 }
 
 

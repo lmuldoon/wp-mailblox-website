@@ -1,0 +1,91 @@
+{
+    "system_tags": {
+        "UNSUB": {
+            "tag": "{{REMOVE_LINK}}",
+            "type": "url",
+            "label": "Unsubscribe URL"
+        },
+        "WEBVERSION": {
+            "tag": "{{BROWSER_URL}}",
+            "type": "url",
+            "label": "View Online URL"
+        },
+        "ARCHIVE": {
+            "tag": "{{BROWSER_URL}}",
+            "type": "url",
+            "label": "Web Version URL"
+        },
+        "EMAIL": {
+            "tag": "{{contact.email}}",
+            "type": "text",
+            "label": "Email Address"
+        }
+    },
+    "audience_tags": {
+        "FNAME": {
+            "tag": "{{contact.first_name}}",
+            "type": "text",
+            "label": "First Name"
+        },
+        "LNAME": {
+            "tag": "{{contact.last_name}}",
+            "type": "text",
+            "label": "Last Name"
+        },
+        "FULLNAME": {
+            "tag": "{{contact.name}}",
+            "type": "text",
+            "label": "Full Name"
+        },
+        "EMAIL": {
+            "tag": "{{contact.email}}",
+            "type": "text",
+            "label": "Email Address"
+        },
+        "PHONE": {
+            "tag": "{{contact.phone}}",
+            "type": "text",
+            "label": "Phone Number"
+        },
+        "COMPANY": {
+            "tag": "{{contact.company}}",
+            "type": "text",
+            "label": "Company"
+        },
+        "CITY": {
+            "tag": "{{contact.city}}",
+            "type": "text",
+            "label": "City"
+        },
+        "COUNTRY": {
+            "tag": "{{contact.country}}",
+            "type": "text",
+            "label": "Country"
+        }
+    },
+    "conditional_tags": {
+        "IF": {
+            "tag": "{{IF contact.first_name}}",
+            "type": "text",
+            "label": "Conditional If"
+        },
+        "ELSE": {
+            "tag": "{{ELSE}}",
+            "type": "text",
+            "label": "Conditional Else"
+        },
+        "END_IF": {
+            "tag": "{{END}}",
+            "type": "text",
+            "label": "Conditional End If"
+        }
+    },
+    "conditional_fields": {
+        "FNAME":   { "if": "{{IF contact.first_name}}", "endif": "{{END}}", "label": "First Name" },
+        "LNAME":   { "if": "{{IF contact.last_name}}",  "endif": "{{END}}", "label": "Last Name" },
+        "COMPANY": { "if": "{{IF contact.company}}",    "endif": "{{END}}", "label": "Company" },
+        "PHONE":   { "if": "{{IF contact.phone}}",      "endif": "{{END}}", "label": "Phone Number" },
+        "CITY":    { "if": "{{IF contact.city}}",       "endif": "{{END}}", "label": "City" },
+        "COUNTRY": { "if": "{{IF contact.country}}",    "endif": "{{END}}", "label": "Country" }
+    }
+}

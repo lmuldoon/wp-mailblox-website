@@ -1,0 +1,218 @@
+{
+    "title": "Birthday",
+    "description": "Warm birthday email with personal message and special offer",
+    "blocks": [
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0050b1", "darkBackgroundColor": "#0050b1" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 28, "paddingBottom": 28, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/logo",
+                                    "attributes": {},
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#7eb7c8", "darkBackgroundColor": "#7eb7c8" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 0, "paddingBottom": 0, "paddingLeft": 0, "paddingRight": 0 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/birthday.jpg",
+                                        "alt": "Happy Birthday",
+                                        "displayWidth": 600,
+                                        "width": 1200,
+                                        "height": 600,
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#f3ddec", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 48, "paddingBottom": 48, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "Happy Birthday, [[FNAME]]!", "textColor": "#0050b1" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "We hope your special day is filled with joy. As a small token of our appreciation, we've put together something just for you — because you deserve to be celebrated.",
+                                        "textColor": ""
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 28 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Claim your birthday gift",
+                                        "href": "#",
+                                        "backgroundColor": "#0050b1",
+                                        "borderRadius": 4,
+                                        "textColor": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 40, "paddingBottom": 40, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/divider",
+                                    "attributes": { "color": "#a4b5c5", "thickness": 1, "spacing": 0 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 32 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "A little extra from us", "textColor": "" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Browse our latest collection and treat yourself — your birthday is the perfect excuse. Explore new arrivals, exclusive deals, and our best-sellers picked just for the occasion.",
+                                        "textColor": ""
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 24 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Shop now",
+                                        "href": "#",
+                                        "backgroundColor": "#7eb7c8",
+                                        "borderRadius": 4,
+                                        "textColor": "#ffffff"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 32 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/divider",
+                                    "attributes": { "color": "#a4b5c5", "thickness": 1, "spacing": 0 },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0050b1", "darkBackgroundColor": "#0050b1" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 24, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/footer",
+                                    "attributes": {
+                                        "showUnsubscribe": true,
+                                        "unsubscribeText": "Unsubscribe",
+                                        "showViewOnline": true,
+                                        "viewOnlineText": "View online",
+                                        "address": "Your Company, 123 Example Street",
+                                        "footerText": "You are receiving this email because you are a valued customer."
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

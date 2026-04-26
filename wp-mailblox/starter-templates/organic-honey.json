@@ -1,0 +1,382 @@
+{
+    "title": "Organic Honey",
+    "description": "Artisan organic honey brand email — warm, earthy and handcrafted in feel",
+    "blocks": [
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#2d1a00", "darkBackgroundColor": "#2d1a00" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 32, "paddingBottom": 32, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/logo",
+                                    "attributes": { "align": "center" },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#fff8e1", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 56, "paddingBottom": 56, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Straight from the hive",
+                                        "textColor": "#f5a623",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 8 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "Pure Honey. Real Craft. Made in India.", "textColor": "#2d1a00", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Our bees roam the wild meadows and ancient forests of rural Rajasthan, collecting nectar from thousands of wildflowers. No additives, no heating, no shortcuts — just pure, raw honey the way nature intended.",
+                                        "textColor": "#5a3e00",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 28 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Shop the collection",
+                                        "href": "#",
+                                        "backgroundColor": "#f5a623",
+                                        "borderRadius": 6,
+                                        "textColor": "#2d1a00",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#fff8e1", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 0, "paddingBottom": 0, "paddingLeft": 0, "paddingRight": 0 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Golden honey being poured",
+                                        "displayWidth": 600,
+                                        "width": 1600,
+                                        "height": 800,
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 40, "paddingBottom": 8, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Our Varieties", "textColor": "#2d1a00", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/divider",
+                                    "attributes": { "color": "#f5a623", "thickness": 2, "spacing": 8 },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 2, "gap": 24, "paddingTop": 16, "paddingBottom": 40, "paddingLeft": 32, "paddingRight": 32 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Raw Wildflower Honey",
+                                        "displayWidth": 260,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 10
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Raw Wildflower Honey", "textColor": "#2d1a00" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "A complex, aromatic blend harvested from hundreds of native wildflowers. Light amber in colour with a floral finish.",
+                                        "textColor": "#666666"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Order now",
+                                        "href": "#",
+                                        "backgroundColor": "#f5a623",
+                                        "borderRadius": 6,
+                                        "textColor": "#2d1a00",
+                                        "align": "left"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Forest Dark Honey",
+                                        "displayWidth": 260,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 10
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Forest Dark Honey", "textColor": "#2d1a00" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Deep, rich and intensely flavoured. Harvested from ancient teak and sal forest blossoms in the foothills of the Aravalli hills.",
+                                        "textColor": "#666666"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Order now",
+                                        "href": "#",
+                                        "backgroundColor": "#f5a623",
+                                        "borderRadius": 6,
+                                        "textColor": "#2d1a00",
+                                        "align": "left"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#fef3c7", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 48, "paddingBottom": 48, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Why our honey is different", "textColor": "#2d1a00", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "100% raw and unfiltered · Cold extracted to preserve enzymes · No added sugar or preservatives · Traceable to a single apiary · Sustainably harvested by local beekeepers · Certified organic",
+                                        "textColor": "#5a3e00",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 24 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Our story",
+                                        "href": "#",
+                                        "backgroundColor": "#2d1a00",
+                                        "borderRadius": 6,
+                                        "textColor": "#f5a623",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#2d1a00", "darkBackgroundColor": "#2d1a00" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 16, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/social",
+                                    "attributes": {
+                                        "align": "center",
+                                        "iconSize": 26,
+                                        "badgeColor": "#f5a623",
+                                        "badgeShape": "circle",
+                                        "instagram": "#",
+                                        "facebook": "#"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/footer",
+                                    "attributes": {
+                                        "showUnsubscribe": true,
+                                        "unsubscribeText": "Unsubscribe",
+                                        "showViewOnline": true,
+                                        "viewOnlineText": "View online",
+                                        "address": "The Honey Collective, Jaipur, Rajasthan, India",
+                                        "footerText": "You are receiving this email because you subscribed to our honey updates."
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

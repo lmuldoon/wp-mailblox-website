@@ -1,0 +1,12 @@
+.eb-bg-image-preview {
+    margin-block: 10px 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.eb-bg-image-preview img {
+    display: block;
+    width: 100%;
+    height: auto;
+}

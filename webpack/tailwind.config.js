@@ -37,10 +37,11 @@ module.exports = {
     fontWeight: {
       normal: 400,
       medium: 600,
+      bold: 700
     },
     lineHeight: {
       'tight': 'var(--font-lineheighttight)',
-      'regular': 'var(--font-lineheightregular)'
+      'regular': 'var(--font-lineheightregular)',
     },
     variables: {
       DEFAULT: {
@@ -66,8 +67,8 @@ module.exports = {
           success: '#4bb543'
         },
         font:{
-          body: ['Poppins', 'Arial', "Helvetica Neue", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"],
-          heading: ['Poppins', 'Arial', "Helvetica Neue", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"],
+          body: ['archivo', 'Arial', "Helvetica Neue", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"],
+          heading: ['archivo', 'Arial', "Helvetica Neue", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"],
           lineheightregular: 1.7,
           lineheighttight: 1.2
         },

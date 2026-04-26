@@ -1,0 +1,279 @@
+{
+    "title": "Concert Advertisement",
+    "description": "Bold concert promotion email for Bright 'n Light — dark with yellow accents",
+    "blocks": [
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 32, "paddingBottom": 32, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/logo",
+                                    "attributes": { "align": "center" },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 64, "paddingBottom": 64, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "LIVE IN CONCERT",
+                                        "textColor": "#f5c518",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 8 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "Bright 'n Light", "textColor": "#ffffff", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/divider",
+                                    "attributes": { "color": "#f5c518", "thickness": 2, "spacing": 0 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "The World Tour 2026",
+                                        "textColor": "#aaaaaa",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 0, "paddingBottom": 0, "paddingLeft": 0, "paddingRight": 0 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Bright 'n Light on stage",
+                                        "displayWidth": 600,
+                                        "width": 1600,
+                                        "height": 800,
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#f5c518", "darkBackgroundColor": "#f5c518" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 32, "paddingBottom": 32, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "Saturday 14 June 2026", "textColor": "#0a0a0a", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 8 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "The O2 Arena, London · Doors open 7pm · Show starts 9pm",
+                                        "textColor": "#333333",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#111111", "darkBackgroundColor": "#111111" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 56, "paddingBottom": 56, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "The most electric show of 2026", "textColor": "#ffffff", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "After a sold-out European run, Bright 'n Light brings their headline world tour to the UK for one unforgettable night. Expect brand new tracks from their critically acclaimed album alongside all the fan favourites that defined a generation.",
+                                        "textColor": "#cccccc",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 32 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Get your tickets now",
+                                        "href": "#",
+                                        "backgroundColor": "#f5c518",
+                                        "borderRadius": 4,
+                                        "textColor": "#0a0a0a",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Tickets from £45 · VIP packages available · Limited availability",
+                                        "textColor": "#777777",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 16, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/social",
+                                    "attributes": {
+                                        "align": "center",
+                                        "iconSize": 28,
+                                        "badgeColor": "#f5c518",
+                                        "badgeShape": "circle",
+                                        "instagram": "#",
+                                        "facebook": "#",
+                                        "twitter": "#",
+                                        "youtube": "#"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/footer",
+                                    "attributes": {
+                                        "showUnsubscribe": true,
+                                        "unsubscribeText": "Unsubscribe",
+                                        "showViewOnline": true,
+                                        "viewOnlineText": "View online",
+                                        "address": "Bright 'n Light Management, 12 Music Row",
+                                        "footerText": "You received this email because you signed up for Bright 'n Light updates."
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

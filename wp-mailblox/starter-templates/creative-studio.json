@@ -1,0 +1,391 @@
+{
+    "title": "Creative Studio",
+    "description": "Playful, colourful creative studio email with rounded elements and vibrant personality",
+    "blocks": [
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 32, "paddingBottom": 24, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/logo",
+                                    "attributes": { "align": "center" },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 8, "paddingBottom": 8, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/menu",
+                                    "attributes": {
+                                        "items": [
+                                            { "label": "Work", "url": "#" },
+                                            { "label": "Services", "url": "#" },
+                                            { "label": "Studio", "url": "#" },
+                                            { "label": "Say Hello", "url": "#" }
+                                        ],
+                                        "align": "center",
+                                        "fontSize": 13,
+                                        "textColor": "#333333",
+                                        "separatorWidth": 0,
+                                        "separatorColor": "#eeeeee",
+                                        "paddingTop": 8,
+                                        "paddingBottom": 8,
+                                        "paddingLeft": 20,
+                                        "paddingRight": 20
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#fff5f0", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 56, "paddingBottom": 56, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "We make ideas come alive ✨", "textColor": "#1a1a1a", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Hi there! It's the CHIC team here with a look at what we've been working on, some exciting new offerings and a sneak peek at projects we can't wait to share with the world. Grab a coffee — this one's good.",
+                                        "textColor": "#555555",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 28 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "See our latest work",
+                                        "href": "#",
+                                        "backgroundColor": "#ff6b6b",
+                                        "borderRadius": 32,
+                                        "textColor": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 40, "paddingBottom": 8, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "What we do", "textColor": "#1a1a1a", "align": "center" },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 3, "gap": 16, "paddingTop": 16, "paddingBottom": 40, "paddingLeft": 24, "paddingRight": 24 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Brand identity work",
+                                        "displayWidth": 160,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 20
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Brand Identity", "textColor": "#4361ee" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Logos, systems and visual identities that are unmistakably you.",
+                                        "textColor": "#777777"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Web design work",
+                                        "displayWidth": 160,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 20
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Web Design", "textColor": "#2ec4b6" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Websites that are beautiful to look at and a joy to use.",
+                                        "textColor": "#777777"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Motion and animation work",
+                                        "displayWidth": 160,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 20
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Motion & Animation", "textColor": "#e91e8c" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "From subtle micro-interactions to full campaign animations.",
+                                        "textColor": "#777777"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#f0fdf9", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 48, "paddingBottom": 48, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Client love", "textColor": "#2ec4b6", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "\"Working with CHIC was honestly the most fun we've had on a rebrand. They understood our vibe immediately and delivered something that felt bold, fresh and totally us. 10/10 would recommend.\"",
+                                        "textColor": "#1a1a1a",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 8 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "— Jamie L., Founder at Sprout Co.",
+                                        "textColor": "#aaaaaa",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 24 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Start a project with us",
+                                        "href": "#",
+                                        "backgroundColor": "#4361ee",
+                                        "borderRadius": 32,
+                                        "textColor": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#1a1a1a", "darkBackgroundColor": "#1a1a1a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 16, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/social",
+                                    "attributes": {
+                                        "align": "center",
+                                        "iconSize": 28,
+                                        "badgeColor": "#ff6b6b",
+                                        "badgeShape": "circle",
+                                        "instagram": "#",
+                                        "twitter": "#",
+                                        "linkedin": "#",
+                                        "tiktok": "#"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/footer",
+                                    "attributes": {
+                                        "showUnsubscribe": true,
+                                        "unsubscribeText": "Unsubscribe",
+                                        "showViewOnline": true,
+                                        "viewOnlineText": "View online",
+                                        "address": "CHIC Creative Studio, The Colour Building, Studio 4",
+                                        "footerText": "You're on our list because you're one of the good ones. Unsubscribe below if that changes."
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

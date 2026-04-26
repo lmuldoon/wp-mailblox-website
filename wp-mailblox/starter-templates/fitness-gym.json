@@ -1,0 +1,324 @@
+{
+    "title": "Fitness Gym Newsletter",
+    "description": "Ladies fitness gym newsletter with class schedule, motivation and member spotlight",
+    "blocks": [
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#4a1a7a", "darkBackgroundColor": "#4a1a7a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 24, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/logo",
+                                    "attributes": { "align": "center" },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#e91e8c", "darkBackgroundColor": "#e91e8c" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 56, "paddingBottom": 56, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "Strong. Supported. Unstoppable.", "textColor": "#ffffff", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "April is here and your schedule is packed with new classes, fresh challenges and a community that cheers you on every step of the way. Let's make this your strongest month yet.",
+                                        "textColor": "#fce4ec",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 40, "paddingBottom": 8, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "New Classes This Month", "textColor": "#4a1a7a", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/divider",
+                                    "attributes": { "color": "#f3e5f5", "thickness": 2, "spacing": 8 },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 3, "gap": 16, "paddingTop": 16, "paddingBottom": 40, "paddingLeft": 24, "paddingRight": 24 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Barre class",
+                                        "displayWidth": 160,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 10
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 10 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Barre Flow", "textColor": "#4a1a7a" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Mon & Thu · 6:30am\nTone, lengthen and strengthen at the barre.",
+                                        "textColor": "#666666"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "HIIT class",
+                                        "displayWidth": 160,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 10
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 10 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Power HIIT", "textColor": "#4a1a7a" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Tue & Fri · 7am & 5:30pm\nBurn, build and leave feeling incredible.",
+                                        "textColor": "#666666"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Yoga class",
+                                        "displayWidth": 160,
+                                        "width": 800,
+                                        "height": 800,
+                                        "align": "center",
+                                        "borderRadius": 10
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 10 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "Restore Yoga", "textColor": "#4a1a7a" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Wed & Sun · 9am\nDeep stretching and mindful movement.",
+                                        "textColor": "#666666"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#fce4ec", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 48, "paddingBottom": 48, "paddingLeft": 48, "paddingRight": 48 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/subheader",
+                                    "attributes": { "content": "April 30-Day Challenge", "textColor": "#e91e8c", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 12 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Join hundreds of Pulse members for our April challenge — 30 days of movement, community and habit-building. Track your workouts, earn points and celebrate every win, big or small. Every class counts.",
+                                        "textColor": "#4a1a7a",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 24 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Sign me up",
+                                        "href": "#",
+                                        "backgroundColor": "#e91e8c",
+                                        "borderRadius": 24,
+                                        "textColor": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#4a1a7a", "darkBackgroundColor": "#4a1a7a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 16, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/social",
+                                    "attributes": {
+                                        "align": "center",
+                                        "iconSize": 28,
+                                        "badgeColor": "#e91e8c",
+                                        "badgeShape": "circle",
+                                        "instagram": "#",
+                                        "facebook": "#",
+                                        "tiktok": "#"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/footer",
+                                    "attributes": {
+                                        "showUnsubscribe": true,
+                                        "unsubscribeText": "Unsubscribe",
+                                        "showViewOnline": true,
+                                        "viewOnlineText": "View online",
+                                        "address": "Pulse Fitness for Women, 55 Wellness Way",
+                                        "footerText": "You are receiving this newsletter as a valued Pulse member."
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

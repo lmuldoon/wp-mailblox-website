@@ -42,12 +42,13 @@
 
 	svg,
 	img {
-		height: 40px;
+		height: 60px;
 		width: auto;
 		display: block;
 		// Invert to white since header is always on dark background
 		//filter: brightness(0) invert(1);
 		transition: opacity 0.2s ease;
+		fill: white;
 	}
 
 	&:hover svg,

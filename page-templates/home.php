@@ -48,14 +48,41 @@ get_header();
 <article>
 
 	<!-- =============================================
-	     INTRODUCTION
+	     WHY WP MAILBLOX
 	============================================= -->
-	<div class="section section--intro">
+	<div class="section section--why">
 		<div class="container">
 			<div class="text-container mx-auto text-center animated-up">
 				<h2>Your email workstack, inside WordPress</h2>
 				<div class="line mx-auto"></div>
-				<p>WP Mailblox is a native WordPress email builder that lets you design professional HTML emails using familiar Gutenberg blocks. Set up brand Presets once — fonts, colours, logo — and every email you build inherits them automatically. When you're ready to send, export clean, email-client-safe HTML or push your template directly to your email platform with one click.</p>
+				<p>Design professional HTML emails using blocks you already know, then export clean code or push directly to your platform — all without leaving WordPress.</p>
+			</div>
+			<div class="why-pillars animated-up">
+
+				<div class="why-pillar">
+					<div class="why-pillar__icon" aria-hidden="true">
+						<iconify-icon icon="material-symbols:home-work-outline-rounded"></iconify-icon>
+					</div>
+					<h3>Works where you work</h3>
+					<p>Everything lives in WordPress — your content, assets, and brand are already here. Your email templates should be too. No separate login, no context switching, no rebuilding your library in yet another tool.</p>
+				</div>
+
+				<div class="why-pillar">
+					<div class="why-pillar__icon" aria-hidden="true">
+						<iconify-icon icon="material-symbols:link-off-rounded"></iconify-icon>
+					</div>
+					<h3>Not locked to any platform</h3>
+					<p>Push directly to Mailchimp, Brevo, Klaviyo, Campaign Monitor or OneSignal, or export clean HTML to any other ESP. Switch platforms whenever you like without rebuilding a single template.</p>
+				</div>
+
+				<div class="why-pillar">
+					<div class="why-pillar__icon" aria-hidden="true">
+						<iconify-icon icon="material-symbols:lock-open-outline-rounded"></iconify-icon>
+					</div>
+					<h3>Templates you actually own</h3>
+					<p>Emails are stored as standard WordPress posts in your own database. Export the HTML any time. Your work is never held hostage by a subscription or a platform decision you didn't make.</p>
+				</div>
+
 			</div>
 		</div>
 	</div>
@@ -90,6 +117,16 @@ get_header();
 					<div class="email-client__sidebar" role="listbox" aria-label="Email inbox">
 
 						<div class="inbox-item is-active" role="option" aria-selected="true" tabindex="0">
+							<div class="inbox-item__meta">
+								<span class="inbox-item__sender">Bright 'n' Light</span>
+								<span class="inbox-item__time">10:36 am</span>
+							</div>
+							<div class="inbox-item__subject">Live in concert</div>
+							<div class="inbox-item__preview">Something big is coming… Bright ’n Light just announced their global tour...</div>
+							<div class="inbox-item__progress" aria-hidden="true"></div>
+						</div>
+
+						<div class="inbox-item" role="option" aria-selected="true" tabindex="0">
 							<div class="inbox-item__meta">
 								<span class="inbox-item__sender">AppVault Team</span>
 								<span class="inbox-item__time">10:24 am</span>
@@ -193,7 +230,7 @@ get_header();
 
 					<!-- Email preview pane -->
 					<div class="email-client__preview" aria-live="polite" aria-label="Email preview">
-						<img class="email-preview__img" src="/static/images/email-examples/appy.jpg" alt="Email template preview">
+						<img class="email-preview__img" src="/static/images/email-examples/bright-n-light.jpg" alt="Email template preview">
 					</div><!-- /.email-client__preview -->
 
 				</div><!-- /.email-client__body -->
@@ -243,7 +280,7 @@ get_header();
 						<iconify-icon icon="material-symbols:send-rounded"></iconify-icon>
 					</div>
 					<h3>Direct platform push <span class="badge badge--pro">Pro</span></h3>
-					<p>Send your finished template straight to Mailchimp, Brevo, Klaviyo, Campaign Monitor, ActiveCampaign or HubSpot — without leaving WordPress.</p>
+					<p>Send your finished template straight to Mailchimp, Brevo, Klaviyo, Campaign Monitor or OneSignal — without leaving WordPress. All platforms supported via HTML export.</p>
 				</div>
 
 				<div class="feature-card">
@@ -259,7 +296,64 @@ get_header();
 						<iconify-icon icon="material-symbols:storefront-outline-rounded"></iconify-icon>
 					</div>
 					<h3>WooCommerce blocks <span class="badge badge--pro">Pro</span></h3>
-					<p>Include live product data, order summaries, product recommendations and coupon codes directly in your email templates — powered by your store.</p>
+					<p>Include live product data, order summaries and coupon codes directly in your email templates — powered by your WooCommerce store.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- =============================================
+	     PRESET SPOTLIGHT
+	============================================= -->
+	<div class="section section--preset-spotlight bg-darkblue">
+		<div class="container">
+			<div class="preset-spotlight animated-up">
+
+				<div class="preset-spotlight__content">
+					<h2>One Preset. Every email, on-brand.</h2>
+					<p>Define your logo, colours, fonts and default platform once. Every template you build inherits them automatically — including a separate dark mode logo. Update the Preset and every email stays in sync. No hunting for hex codes. No uploading a logo twice.</p>
+					<ul class="preset-feature-list">
+						<li><span class="preset-tick" aria-hidden="true">✓</span> Web-safe and Google Fonts per element (heading, body, button)</li>
+						<li><span class="preset-tick" aria-hidden="true">✓</span> Full colour palette — text, background, button, link</li>
+						<li><span class="preset-tick" aria-hidden="true">✓</span> Logo with automatic dark mode swap</li>
+						<li><span class="preset-tick" aria-hidden="true">✓</span> Default email platform and container width</li>
+						<li><span class="preset-tick" aria-hidden="true">✓</span> Per-template dark background override</li>
+					</ul>
+				</div>
+
+				<div class="preset-visual-card" aria-hidden="true">
+
+					<div class="preset-visual__row">
+						<span class="preset-visual__label">Colours</span>
+						<div class="preset-swatches">
+							<div class="preset-swatch" style="background:#10253d;"></div>
+							<div class="preset-swatch" style="background:#0274a5;"></div>
+							<div class="preset-swatch" style="background:#02ace9;"></div>
+							<div class="preset-swatch" style="background:#f5f5f5;"></div>
+						</div>
+					</div>
+
+					<div class="preset-visual__row">
+						<span class="preset-visual__label">Heading font</span>
+						<div class="preset-font-sample">Poppins</div>
+					</div>
+
+					<div class="preset-visual__row">
+						<span class="preset-visual__label">Body font</span>
+						<div class="preset-font-sample preset-font-sample--body">Georgia, serif</div>
+					</div>
+
+					<div class="preset-visual__row">
+						<span class="preset-visual__label">Logo</span>
+						<div class="preset-logo-placeholder">your-logo.svg</div>
+					</div>
+
+					<div class="preset-visual__row">
+						<span class="preset-visual__label">Default platform</span>
+						<span class="preset-platform-badge">Mailchimp</span>
+					</div>
+
 				</div>
 
 			</div>
@@ -269,40 +363,40 @@ get_header();
 	<!-- =============================================
 	     HOW IT WORKS
 	============================================= -->
-	<div class="section bg-grey" id="how-it-works">
+	<div class="section section--how-it-works" id="how-it-works">
 		<div class="container">
 			<div class="text-center mb-12 animated-up">
 				<h2>Up and running in minutes</h2>
 				<div class="line mx-auto"></div>
 			</div>
-			<div class="steps animated-up">
+			<div class="hiw animated-up">
 
-				<div class="step">
-					<div class="step__number" aria-hidden="true">1</div>
-					<div class="step__content stack">
-						<h3>Install &amp; activate</h3>
-						<p>Search for <strong>WP Mailblox</strong> in your WordPress plugin directory, install and activate. The onboarding wizard walks you through your first setup in under two minutes.</p>
+				<div class="hiw__step">
+					<div class="hiw__icon" aria-hidden="true">
+						<iconify-icon icon="material-symbols:extension-rounded"></iconify-icon>
 					</div>
+					<h3>Install &amp; activate</h3>
+					<p>Search for <strong>WP Mailblox</strong> in your WordPress plugin directory, install and activate. The onboarding wizard walks you through your first setup in under two minutes.</p>
 				</div>
 
-				<div class="step__connector" aria-hidden="true"></div>
+				<div class="hiw__arrow" aria-hidden="true"></div>
 
-				<div class="step">
-					<div class="step__number" aria-hidden="true">2</div>
-					<div class="step__content stack">
-						<h3>Configure your Preset</h3>
-						<p>Upload your logo, set your brand colours and fonts, choose your email platform and enter your API credentials. Your Preset becomes the foundation for every email you build.</p>
+				<div class="hiw__step">
+					<div class="hiw__icon" aria-hidden="true">
+						<iconify-icon icon="material-symbols:tune-rounded"></iconify-icon>
 					</div>
+					<h3>Configure your Preset</h3>
+					<p>Upload your logo, set your brand colours and fonts, and choose your email platform. Your Preset becomes the foundation for every email you build.</p>
 				</div>
 
-				<div class="step__connector" aria-hidden="true"></div>
+				<div class="hiw__arrow" aria-hidden="true"></div>
 
-				<div class="step">
-					<div class="step__number" aria-hidden="true">3</div>
-					<div class="step__content stack">
-						<h3>Build &amp; export</h3>
-						<p>Create a new Email Template, pick a starter layout or start from blank, add your blocks, set the subject line and preheader, then export clean HTML or push straight to your platform.</p>
+				<div class="hiw__step">
+					<div class="hiw__icon" aria-hidden="true">
+						<iconify-icon icon="material-symbols:rocket-launch-rounded"></iconify-icon>
 					</div>
+					<h3>Build &amp; export</h3>
+					<p>Create a new Email Template, pick a starter layout, add your blocks, set the subject line and preheader, then export clean HTML or push straight to your platform.</p>
 				</div>
 
 			</div>
@@ -323,11 +417,34 @@ get_header();
 				<div class="platform-badge">Brevo</div>
 				<div class="platform-badge">Klaviyo</div>
 				<div class="platform-badge">Campaign Monitor</div>
-				<div class="platform-badge">ActiveCampaign</div>
+				<div class="platform-badge">OneSignal</div>
 				<div class="platform-badge">HubSpot</div>
+				<div class="platform-badge">ActiveCampaign</div>
+				<div class="platform-badge">EmailOctopus</div>
+				<div class="platform-badge">GetResponse</div>
+				<div class="platform-badge">ConvertKit</div>
 			</div>
 			<div class="animated-up">
-				<p class="text-center mt-6 animated-up" style="color: rgba(255,255,255,0.5); font-size: var(--size-300);">Direct platform push requires WP Mailblox Pro. HTML export works with any platform.</p>
+				<p class="text-center mt-6 animated-up" style="color: rgba(255,255,255,0.5); font-size: var(--size-300);">Direct push to Mailchimp, Brevo, Klaviyo, Campaign Monitor and OneSignal requires WP Mailblox Pro. ActiveCampaign, HubSpot, EmailOctopus, GetResponse and ConvertKit are supported via HTML export with platform-compatible merge tags.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- =============================================
+	     AGENCY CALLOUT
+	============================================= -->
+	<div class="section section--agency">
+		<div class="container">
+			<div class="agency-callout animated-up">
+				<p class="agency-callout__eyebrow">For agencies &amp; freelancers</p>
+				<h2>Managing emails for multiple brands?</h2>
+				<p>WP Mailblox Pro gives you unlimited Presets — one for each client or project. Separate fonts, colours, logos and platform connections, all from a single WordPress install. Build for every brand without mixing up a hex code.</p>
+				<a class="button button--primary" href="#pricing">
+					See Pro features
+					<svg aria-hidden="true" focusable="false">
+						<use href="#arrow" />
+					</svg>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -363,11 +480,6 @@ get_header();
 						<li class="feature--yes">Mobile responsive controls</li>
 						<li class="feature--yes">UTM tracking</li>
 						<li class="feature--yes">Starter template library</li>
-						<li class="feature--no">Direct platform push</li>
-						<li class="feature--no">Multiple Presets</li>
-						<li class="feature--no">WooCommerce blocks</li>
-						<li class="feature--no">HTML / custom code block</li>
-						<li class="feature--no">Remove WP Mailblox branding</li>
 					</ul>
 					<a class="button button--outline w-full text-center justify-center" href="https://wordpress.org/plugins/wp-mailblox/" target="_blank" rel="noopener">Download Free</a>
 				</div>
@@ -408,18 +520,12 @@ get_header();
 						</div>
 					</div>
 					<ul class="pricing-card__features">
-						<li class="feature--yes">Everything in Free</li>
+						<li class="feature--yes">Everything in Free, plus:</li>
 						<li class="feature--yes">Unlimited email templates</li>
 						<li class="feature--yes">Unlimited brand Presets</li>
-						<li class="feature--yes">All standard blocks</li>
-						<li class="feature--yes">HTML export (download &amp; copy)</li>
-						<li class="feature--yes">Dark mode support</li>
-						<li class="feature--yes">Mobile responsive controls</li>
-						<li class="feature--yes">UTM tracking</li>
-						<li class="feature--yes">Starter template library</li>
-						<li class="feature--yes">Direct push to 6 platforms</li>
-						<li class="feature--yes">Multiple Presets</li>
+						<li class="feature--yes">Direct push to 5 platforms</li>
 						<li class="feature--yes">WooCommerce blocks</li>
+						<li class="feature--yes">Reusable section modules</li>
 						<li class="feature--yes">HTML / custom code block</li>
 						<li class="feature--yes">Remove WP Mailblox branding</li>
 					</ul>
@@ -509,7 +615,7 @@ get_header();
 							<h3>Do I need WooCommerce to use WP Mailblox?</h3>
 						</div>
 						<div class="accordion-content stack">
-							<p>No. WooCommerce is only required for the WooCommerce-specific blocks (Product, Order Table, Product Recommendations, Coupon) which are Pro features. All other blocks and the full core plugin work independently of WooCommerce.</p>
+							<p>No. WooCommerce is only required for the WooCommerce-specific blocks (Product, Order Table, Coupon) which are Pro features. All other blocks and the full core plugin work independently of WooCommerce.</p>
 							<p>If WooCommerce isn't active, the WooCommerce blocks simply won't appear in the block inserter.</p>
 						</div>
 					</div>

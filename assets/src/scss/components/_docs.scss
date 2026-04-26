@@ -8,14 +8,6 @@
 
 // ─── HEADER STRIP ─────────────────────────────────────────────────────────────
 
-.docs-header {
-	padding-top: calc(var(--header-height, 80px) + var(--section-padding));
-
-	h1 {
-		margin-bottom: 0.5rem;
-	}
-}
-
 // ─── TWO-COLUMN LAYOUT ────────────────────────────────────────────────────────
 
 .docs-layout {
@@ -214,6 +206,14 @@
 
 	@screen md {
 		grid-template-columns: 160px 1fr 1fr;
+	}
+}
+
+.docs-block-table--two-col .docs-block-row {
+	grid-template-columns: 200px 1fr;
+
+	@screen md {
+		grid-template-columns: 220px 1fr;
 	}
 }
 

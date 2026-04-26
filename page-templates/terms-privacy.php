@@ -15,7 +15,7 @@ get_header();
 
 <article>
 
-	<div class="section bg-darkblue">
+	<div class="sections-header section bg-darkblue">
 		<div class="container">
 			<div class="animated-up">
 				<h1 class="text-white">Terms &amp; Privacy Policy</h1>

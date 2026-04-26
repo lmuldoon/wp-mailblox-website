@@ -1,0 +1,154 @@
+{
+    "system_tags": {
+        "UNSUB": {
+            "tag": "*|UNSUB|*",
+            "type": "url",
+            "label": "Unsubscribe URL"
+        },
+        "FORWARD": {
+            "tag": "*|FORWARD|*",
+            "type": "url",
+            "label": "Forward to a Friend URL"
+        },
+        "ARCHIVE": {
+            "tag": "*|ARCHIVE|*",
+            "type": "url",
+            "label": "Web Version URL"
+        },
+        "WEBVERSION": {
+            "tag": "*|ARCHIVE|*",
+            "type": "url",
+            "label": "View Online URL"
+        },
+        "UPDATE_PROFILE": {
+            "tag": "*|UPDATE_PROFILE|*",
+            "type": "url",
+            "label": "Update Profile URL"
+        },
+        "ABOUT_LIST": {
+            "tag": "*|ABOUT_LIST|*",
+            "type": "text",
+            "label": "About This List"
+        },
+        "LIST_ADDRESS": {
+            "tag": "*|LIST:ADDRESS|*",
+            "type": "text",
+            "label": "List Address"
+        },
+        "LIST_NAME": {
+            "tag": "*|LIST:NAME|*",
+            "type": "text",
+            "label": "List Name"
+        },
+        "SUBJECT": {
+            "tag": "*|MC:SUBJECT|*",
+            "type": "text",
+            "label": "Email Subject"
+        },
+        "REWARDS": {
+            "tag": "*|REWARDS|*",
+            "type": "text",
+            "label": "Mailchimp Rewards Badge"
+        }
+    },
+    "audience_tags": {
+        "FNAME": {
+            "tag": "*|FNAME|*",
+            "type": "text",
+            "label": "First Name"
+        },
+        "LNAME": {
+            "tag": "*|LNAME|*",
+            "type": "text",
+            "label": "Last Name"
+        },
+        "FULLNAME": {
+            "tag": "*|MERGE0|*",
+            "type": "text",
+            "label": "Full Name"
+        },
+        "EMAIL": {
+            "tag": "*|EMAIL|*",
+            "type": "text",
+            "label": "Email Address"
+        },
+        "ADDRESS": {
+            "tag": "*|ADDRESS|*",
+            "type": "text",
+            "label": "Address"
+        },
+        "PHONE": {
+            "tag": "*|PHONE|*",
+            "type": "text",
+            "label": "Phone Number"
+        },
+        "BIRTHDAY": {
+            "tag": "*|BIRTHDAY|*",
+            "type": "text",
+            "label": "Birthday"
+        },
+        "COMPANY": {
+            "tag": "*|COMPANY|*",
+            "type": "text",
+            "label": "Company"
+        }
+    },
+    "campaign_tags": {
+        "CAMPAIGN_UID": {
+            "tag": "*|CAMPAIGN_UID|*",
+            "type": "text",
+            "label": "Campaign ID"
+        },
+        "CAMPAIGN_URL": {
+            "tag": "*|CAMPAIGN_URL|*",
+            "type": "url",
+            "label": "Campaign URL"
+        },
+        "DATE": {
+            "tag": "*|DATE:d/m/Y|*",
+            "type": "text",
+            "label": "Current Date"
+        }
+    },
+    "ecommerce_tags": {
+        "TOTAL_SPENT": {
+            "tag": "*|TOTAL_SPENT|*",
+            "type": "text",
+            "label": "Total Amount Spent"
+        },
+        "ORDERS": {
+            "tag": "*|ORDERS|*",
+            "type": "text",
+            "label": "Number of Orders"
+        },
+        "LAST_ORDER_DATE": {
+            "tag": "*|LAST_ORDER_DATE|*",
+            "type": "text",
+            "label": "Last Order Date"
+        }
+    },
+    "conditional_tags": {
+        "IF": {
+            "tag": "*|IF:FNAME|*",
+            "type": "text",
+            "label": "Conditional If"
+        },
+        "ELSE": {
+            "tag": "*|ELSE:|*",
+            "type": "text",
+            "label": "Conditional Else"
+        },
+        "END_IF": {
+            "tag": "*|END:IF|*",
+            "type": "text",
+            "label": "Conditional End If"
+        }
+    },
+    "conditional_fields": {
+        "FNAME":   { "if": "*|IF:FNAME|*",   "endif": "*|END:IF|*", "label": "First Name" },
+        "LNAME":   { "if": "*|IF:LNAME|*",   "endif": "*|END:IF|*", "label": "Last Name" },
+        "COMPANY": { "if": "*|IF:COMPANY|*", "endif": "*|END:IF|*", "label": "Company" },
+        "PHONE":   { "if": "*|IF:PHONE|*",   "endif": "*|END:IF|*", "label": "Phone Number" },
+        "BIRTHDAY":{ "if": "*|IF:BIRTHDAY|*","endif": "*|END:IF|*", "label": "Birthday" }
+    }
+}

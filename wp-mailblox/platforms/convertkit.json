@@ -1,0 +1,67 @@
+{
+    "system_tags": {
+        "UNSUB": {
+            "tag": "{{ unsubscribe_url }}",
+            "type": "url",
+            "label": "Unsubscribe URL"
+        },
+        "WEBVERSION": {
+            "tag": "{{ browser_url }}",
+            "type": "url",
+            "label": "View Online URL"
+        },
+        "ARCHIVE": {
+            "tag": "{{ browser_url }}",
+            "type": "url",
+            "label": "Web Version URL"
+        },
+        "EMAIL": {
+            "tag": "{{ subscriber.email_address }}",
+            "type": "text",
+            "label": "Email Address"
+        }
+    },
+    "audience_tags": {
+        "FNAME": {
+            "tag": "{{ subscriber.first_name }}",
+            "type": "text",
+            "label": "First Name"
+        },
+        "LNAME": {
+            "tag": "{{ subscriber.last_name }}",
+            "type": "text",
+            "label": "Last Name"
+        },
+        "FULLNAME": {
+            "tag": "{{ subscriber.first_name }} {{ subscriber.last_name }}",
+            "type": "text",
+            "label": "Full Name"
+        },
+        "EMAIL": {
+            "tag": "{{ subscriber.email_address }}",
+            "type": "text",
+            "label": "Email Address"
+        }
+    },
+    "conditional_tags": {
+        "IF": {
+            "tag": "{% if subscriber.first_name %}",
+            "type": "text",
+            "label": "Conditional If"
+        },
+        "ELSE": {
+            "tag": "{% else %}",
+            "type": "text",
+            "label": "Conditional Else"
+        },
+        "END_IF": {
+            "tag": "{% endif %}",
+            "type": "text",
+            "label": "Conditional End If"
+        }
+    },
+    "conditional_fields": {
+        "FNAME": { "if": "{% if subscriber.first_name %}", "endif": "{% endif %}", "label": "First Name" },
+        "LNAME": { "if": "{% if subscriber.last_name %}",  "endif": "{% endif %}", "label": "Last Name" }
+    }
+}

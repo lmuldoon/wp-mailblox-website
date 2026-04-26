@@ -1,0 +1,291 @@
+{
+    "title": "Fashion Brand",
+    "description": "Minimal fashion brand email with editorial hero, product spotlight and collection reveal",
+    "blocks": [
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 28, "paddingBottom": 28, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/logo",
+                                    "attributes": { "align": "center" },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 8, "paddingBottom": 8, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/menu",
+                                    "attributes": {
+                                        "items": [
+                                            { "label": "Women", "url": "#" },
+                                            { "label": "Men", "url": "#" },
+                                            { "label": "New In", "url": "#" },
+                                            { "label": "Sale", "url": "#" }
+                                        ],
+                                        "align": "center",
+                                        "fontSize": 12,
+                                        "textColor": "#888888",
+                                        "separatorWidth": 1,
+                                        "separatorColor": "#333333",
+                                        "paddingTop": 8,
+                                        "paddingBottom": 8,
+                                        "paddingLeft": 16,
+                                        "paddingRight": 16
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 0, "paddingBottom": 0, "paddingLeft": 0, "paddingRight": 0 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Autumn Winter 2026 campaign",
+                                        "displayWidth": 600,
+                                        "width": 1600,
+                                        "height": 900,
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 56, "paddingBottom": 56, "paddingLeft": 64, "paddingRight": 64 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "AUTUMN WINTER 2026",
+                                        "textColor": "#d4af37",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 8 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/header",
+                                    "attributes": { "content": "The Art of Restraint", "textColor": "#0a0a0a", "align": "center" },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 20 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/text",
+                                    "attributes": {
+                                        "content": "Considered cuts. Exceptional fabrics. Clothes designed to outlast the season. This collection is an ode to the enduring power of simplicity — where less is more and quality speaks for itself.",
+                                        "textColor": "#444444",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 32 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/button",
+                                    "attributes": {
+                                        "text": "Explore the collection",
+                                        "href": "#",
+                                        "backgroundColor": "#0a0a0a",
+                                        "borderRadius": 0,
+                                        "textColor": "#ffffff",
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#f5f5f5", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 2, "gap": 2, "paddingTop": 0, "paddingBottom": 0, "paddingLeft": 0, "paddingRight": 0 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Tailored coat",
+                                        "displayWidth": 299,
+                                        "width": 800,
+                                        "height": 900,
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        },
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/image",
+                                    "attributes": {
+                                        "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                                        "alt": "Knitwear look",
+                                        "displayWidth": 299,
+                                        "width": 800,
+                                        "height": 900,
+                                        "align": "center"
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#ffffff", "darkBackgroundColor": "" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 32, "paddingBottom": 32, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/divider",
+                                    "attributes": { "color": "#d4af37", "thickness": 1, "spacing": 0 },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "email-builder/section",
+            "attributes": { "backgroundColor": "#0a0a0a", "darkBackgroundColor": "#0a0a0a" },
+            "innerBlocks": [
+                {
+                    "name": "email-builder/columns",
+                    "attributes": { "columns": 1, "paddingTop": 24, "paddingBottom": 16, "paddingLeft": 40, "paddingRight": 40 },
+                    "innerBlocks": [
+                        {
+                            "name": "email-builder/column",
+                            "attributes": {},
+                            "innerBlocks": [
+                                {
+                                    "name": "email-builder/social",
+                                    "attributes": {
+                                        "align": "center",
+                                        "iconSize": 24,
+                                        "badgeColor": "#d4af37",
+                                        "badgeShape": "square",
+                                        "instagram": "#",
+                                        "pinterest": "#",
+                                        "twitter": "#"
+                                    },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/spacer",
+                                    "attributes": { "spacing": 16 },
+                                    "innerBlocks": []
+                                },
+                                {
+                                    "name": "email-builder/footer",
+                                    "attributes": {
+                                        "showUnsubscribe": true,
+                                        "unsubscribeText": "Unsubscribe",
+                                        "showViewOnline": true,
+                                        "viewOnlineText": "View online",
+                                        "address": "Maison Noir, 14 Fashion Quarter",
+                                        "footerText": "You are receiving this email because you subscribed to our editorial updates."
+                                    },
+                                    "innerBlocks": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

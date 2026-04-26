@@ -1,0 +1,650 @@
+{
+  "title": "Real Estate",
+  "blocks": [
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "darkBackgroundColor": "#1a2744"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "columns": 2,
+            "columnWidths": [
+              100,
+              500
+            ],
+            "paddingTop": 24
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/logo",
+                  "attrs": {
+                    "url": "{{PLUGIN_URL}}assets/images/log-light.png",
+                    "width": 100,
+                    "align": "left",
+                    "mobileAlign": "center"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "email-builder/column",
+              "attrs": {
+                "mobilePaddingTop": 0
+              },
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/social",
+                  "attrs": {
+                    "align": "right",
+                    "iconSize": 18,
+                    "iconSpacing": 5,
+                    "badgeColor": "#1a2744",
+                    "badgePadding": 7,
+                    "facebook": "facebook.com",
+                    "twitter": "twitter.com",
+                    "linkedin": "linkedIn.com",
+                    "hideOnMobile": true
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/menu",
+                  "attrs": {
+                    "items": [
+                      {
+                        "label": "Buy",
+                        "url": "#"
+                      },
+                      {
+                        "label": "Rent",
+                        "url": "#"
+                      },
+                      {
+                        "label": "Sell",
+                        "url": "#"
+                      },
+                      {
+                        "label": "Contact",
+                        "url": "#"
+                      }
+                    ],
+                    "align": "right",
+                    "fontSize": 16,
+                    "textColor": "#1e3f62",
+                    "separatorColor": "#2e4070",
+                    "paddingTop": 10,
+                    "paddingBottom": 6,
+                    "paddingLeft": 35,
+                    "mobilePaddingTop": 0,
+                    "mobilePaddingLeft": 10,
+                    "mobilePaddingRight": 10,
+                    "mobileAlign": "center"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    },
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "darkBackgroundColor": "#1a2744"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "paddingTop": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "paddingRight": 0
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/image",
+                  "attrs": {
+                    "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                    "width": 2560,
+                    "height": 1707,
+                    "displayWidth": 640,
+                    "id": 327
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    },
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "backgroundColor": "#c9a96e",
+        "darkBackgroundColor": "#c9a96e"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "paddingLeft": 40,
+            "paddingRight": 40
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/header",
+                  "attrs": {
+                    "content": "FEATURED PROPERTY OF THE MONTH",
+                    "textColor": "#ffffff",
+                    "align": "center"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#c9a96e;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#c9a96e;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    },
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "backgroundColor": "#f5f2eb"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "columnWidths": [
+              600
+            ],
+            "paddingTop": 30,
+            "paddingBottom": 30
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/header",
+                  "attrs": {
+                    "content": "14 Harrington Place, Kensington",
+                    "textColor": "#1a2744"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/spacer",
+                  "attrs": {
+                    "spacing": 8
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/subheader",
+                  "attrs": {
+                    "content": "5 Bed · 3 Bath · 2,800 sq ft · Guide Price £2.75M",
+                    "textColor": "#c9a96e"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/spacer",
+                  "attrs": {
+                    "spacing": 16
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/text",
+                  "attrs": {
+                    "content": "An exceptional Edwardian family home set across four floors, offered to the market for the first time in over 20 years. Beautifully maintained with generous entertaining spaces, a landscaped rear garden and situated moments from excellent schools and transport links.",
+                    "textColor": "#444444"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/spacer",
+                  "attrs": {
+                    "spacing": 24
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/button",
+                  "attrs": {
+                    "text": "View full listing",
+                    "backgroundColor": "#1a2744",
+                    "borderRadius": 3,
+                    "textColor": "#ffffff",
+                    "align": "left"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#f5f2eb;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#f5f2eb;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    },
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "backgroundColor": "#ffffff"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "columnWidths": [
+              600
+            ],
+            "paddingTop": 30,
+            "paddingBottom": 0
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/subheader",
+                  "attrs": {
+                    "content": "More New Listings",
+                    "textColor": "#1a2744"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/divider",
+                  "attrs": {
+                    "color": "#c9a96e",
+                    "thickness": 2,
+                    "spacing": 8
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    },
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "backgroundColor": "#ffffff"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "columns": 2,
+            "gap": 24,
+            "columnWidths": [
+              288,
+              288
+            ],
+            "paddingTop": 16,
+            "paddingBottom": 30
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/image",
+                  "attrs": {
+                   "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                    "width": 1920,
+                    "height": 1400,
+                    "displayWidth": 288,
+                    "borderRadius": 4,
+                    "id": 331
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/spacer",
+                  "attrs": {
+                    "spacing": 10
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/subheader",
+                  "attrs": {
+                    "content": "3 Elm Grove, Chelsea",
+                    "textColor": "#1a2744"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/text",
+                  "attrs": {
+                    "content": "3 Bed · 2 Bath · £1.45M\nSuperb period conversion in a sought-after location.",
+                    "textColor": "#666666"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            },
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/image",
+                  "attrs": {
+                    "url": "{{PLUGIN_URL}}assets/images/placeholder.jpg",
+                    "width": 1920,
+                    "height": 1400,
+                    "displayWidth": 288,
+                    "borderRadius": 4,
+                    "id": 330
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/spacer",
+                  "attrs": {
+                    "spacing": 10
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/subheader",
+                  "attrs": {
+                    "content": "21 Belmont Road, Islington",
+                    "textColor": "#1a2744"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                },
+                {
+                  "blockName": "email-builder/text",
+                  "attrs": {
+                    "content": "4 Bed · 2 Bath · £1.85M\nBright, contemporary townhouse with private garden.",
+                    "textColor": "#666666"
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n\n\n\n\n\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#ffffff;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    },
+    {
+      "blockName": "email-builder/section",
+      "attrs": {
+        "backgroundColor": "#1a2744",
+        "darkBackgroundColor": "#1a2744"
+      },
+      "innerBlocks": [
+        {
+          "blockName": "email-builder/columns",
+          "attrs": {
+            "paddingTop": 24,
+            "paddingBottom": 24,
+            "paddingLeft": 40,
+            "paddingRight": 40
+          },
+          "innerBlocks": [
+            {
+              "blockName": "email-builder/column",
+              "attrs": [],
+              "innerBlocks": [
+                {
+                  "blockName": "email-builder/footer",
+                  "attrs": {
+                    "viewOnlineText": "View online",
+                    "address": "Crestview Property Group, 1 Mayfair Square, London",
+                    "footerText": "You are receiving this email because you registered your interest with our agency."
+                  },
+                  "innerBlocks": [],
+                  "innerHTML": "",
+                  "innerContent": []
+                }
+              ],
+              "innerHTML": "\n\n",
+              "innerContent": [
+                "\n",
+                null,
+                "\n"
+              ]
+            }
+          ],
+          "innerHTML": "\n\n",
+          "innerContent": [
+            "\n",
+            null,
+            "\n"
+          ]
+        }
+      ],
+      "innerHTML": "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#1a2744;padding-top:0px;padding-bottom:0px\"></div>\n",
+      "innerContent": [
+        "\n<div class=\"wp-block-email-builder-section eb-section-wrapper\" style=\"background-color:#1a2744;padding-top:0px;padding-bottom:0px\">",
+        null,
+        "</div>\n"
+      ]
+    }
+  ]
+}
