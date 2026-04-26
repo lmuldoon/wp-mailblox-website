@@ -1,4 +1,0 @@
-.eb-columns-reversed .block-editor-inner-blocks > .block-editor-block-list__layout {
-    display: flex !important;
-    flex-direction: row-reverse !important;
-}
