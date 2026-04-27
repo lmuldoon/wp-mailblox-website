@@ -20,6 +20,11 @@ function init() {
 	$(document).on('keydown', function (e) {
 		if (e.key === 'Escape' && isOpen) closeMenu();
 	});
+
+	// Close when any mobile nav link is clicked (delegated so GSAP pointer-events state doesn't interfere)
+	$(document).on('click', '#js-mobile-nav a', function () {
+		if (isOpen) closeMenu();
+	});
 }
 
 function openMenu() {
