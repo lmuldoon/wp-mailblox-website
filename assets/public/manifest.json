@@ -1,9 +1,6 @@
 {
-  "footer.js": "assets/public/js/footer.min.js",
-  "header.js": "assets/public/js/header.min.js",
-  "screen.css": "assets/public/css/screen.min.css",
-  "print.css": "assets/public/css/print.min.css",
-  "footer.min.js.map": "assets/public/js/footer.min.js.map",
-  "screen.min.css.map": "assets/public/css/screen.min.css.map",
-  "print.min.css.map": "assets/public/css/print.min.css.map"
+  "footer.js": "assets/public/js/footer.588846671ded37b8a314.min.js",
+  "header.js": "assets/public/js/header.31d6cfe0d16ae931b73c.min.js",
+  "screen.css": "assets/public/css/screen.2415fe80828be3545b7a.min.css",
+  "print.css": "assets/public/css/print.f4202db2f9d2498a78e2.min.css"
 }
