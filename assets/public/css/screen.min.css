@@ -18866,11 +18866,22 @@ body {
   line-height: var(--font-lineheightregular);
   position: relative;
   background: var(--color-white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
 }
 
 body .site-main {
   position: relative;
   z-index: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 body {
@@ -20419,6 +20430,10 @@ iframe.wait-autoplay {
   padding-right: var(--container-padding);
   margin-left: auto;
   margin-right: auto;
+}
+
+.page-404 #maincontent {
+  background-color: var(--color-darkblue);
 }
 
 /**

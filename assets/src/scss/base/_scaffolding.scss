@@ -14,10 +14,14 @@ body {
 	position: relative;
 	//overflow: hidden;
 	background: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	.site-main {
 		//overflow: hidden;
 		position: relative;
 		z-index: 1;
+		flex: 1;
 	}
 	font-feature-settings: "ccmp" 0; // turn off e_ becoming accented e-acute in Roboto font
 }
