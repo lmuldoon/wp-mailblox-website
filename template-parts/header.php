@@ -68,8 +68,8 @@ global $meta;
 
 	<script type="text/javascript" src="/<?php echo get_revision('header.js'); ?>"></script>
 	<?php if ($IS_LIVE) { ?>
-		<!-- Google tag (gtag.js)
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-LQVT7QDPPS"></script>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTDHMMKFTJ"></script>
 		<script>
 			window.dataLayer = window.dataLayer || [];
 
@@ -78,8 +78,8 @@ global $meta;
 			}
 			gtag('js', new Date());
 
-			gtag('config', 'G-LQVT7QDPPS');
-		</script> -->
+			gtag('config', 'G-TTDHMMKFTJ');
+		</script>
 	<?php } ?>
 </head>
 <?php
