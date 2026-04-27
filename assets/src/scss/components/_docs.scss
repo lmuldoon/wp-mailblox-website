@@ -96,6 +96,7 @@
 
 .docs-content {
 	min-width: 0; // prevent grid blowout
+	overflow: hidden;
 }
 
 .docs-section {
