@@ -176,11 +176,16 @@
 
 // ─── BLOCK REFERENCE TABLE ────────────────────────────────────────────────────
 
-.docs-block-table {
+.docs-block-table-wrap {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	margin-block: 1.5rem;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
-	overflow: hidden;
-	margin-block: 1.5rem;
+}
+
+.docs-block-table {
+	min-width: 560px;
 	font-size: var(--size-400);
 	word-wrap: break-word;
 }
@@ -203,18 +208,10 @@
 			border-right: none;
 		}
 	}
-
-	@screen md {
-		grid-template-columns: 160px 1fr 1fr;
-	}
 }
 
 .docs-block-table--two-col .docs-block-row {
 	grid-template-columns: 200px 1fr;
-
-	@screen md {
-		grid-template-columns: 220px 1fr;
-	}
 }
 
 .docs-block-row--header {

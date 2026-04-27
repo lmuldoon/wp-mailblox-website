@@ -223,7 +223,7 @@ get_header();
 
 					<h3>Layout blocks</h3>
 
-					<div class="docs-block-table">
+					<div class="docs-block-table-wrap"><div class="docs-block-table">
 						<div class="docs-block-row docs-block-row--header">
 							<div>Block</div>
 							<div>Description</div>
@@ -247,7 +247,7 @@ get_header();
 							<div>Individual column inside a Columns block. Styled independently from its siblings.</div>
 							<div>Background colour or background image; dark mode background override; padding all 4 sides; per-corner border radius TL/TR/BL/BR; border width and colour; desktop and mobile overrides</div>
 						</div>
-					</div>
+					</div></div>
 
 					<h3>Content blocks</h3>
 
@@ -255,7 +255,7 @@ get_header();
 						<strong>Merge tags in Header, Subheader, and Text blocks.</strong> The Header, Subheader, and Text blocks support personalisation merge tags from your assigned platform — for example, inserting a subscriber's first name or a dynamic coupon code. While editing one of these blocks, click the <strong>merge tag</strong> button in the block toolbar to browse and insert the available tags for your platform. The tags that appear are determined by the platform set in your Preset (or the template's Platform Override).
 					</div>
 
-					<div class="docs-block-table">
+					<div class="docs-block-table-wrap"><div class="docs-block-table">
 						<div class="docs-block-row docs-block-row--header">
 							<div>Block</div>
 							<div>Description</div>
@@ -345,11 +345,11 @@ get_header();
 							<div>Insert raw HTML directly into the email. Useful for custom components, external snippets or platform-specific code.</div>
 							<div>Raw HTML textarea</div>
 						</div>
-					</div>
+					</div></div>
 
 					<h3>WooCommerce blocks <span class="badge badge--pro">Pro</span></h3>
 
-					<div class="docs-block-table">
+					<div class="docs-block-table-wrap"><div class="docs-block-table">
 						<div class="docs-block-row docs-block-row--header">
 							<div>Block</div>
 							<div>Description</div>
@@ -373,7 +373,7 @@ get_header();
 							<div>Displays a styled coupon code block with a prominent code and optional expiry/description text.</div>
 							<div>Title, description, coupon code, expiry text; box background and text colour; code box background and code text colour; dark mode box and code box background; alignment (desktop + mobile); padding all 4 sides (desktop + mobile); border colour, style (solid/dashed/dotted), width, radius; mobile border radius, width, and colour overrides</div>
 						</div>
-					</div>
+					</div></div>
 				</div>
 			</section>
 
@@ -467,7 +467,7 @@ get_header();
 					<h2>Editor Toolbar</h2>
 					<p>The top toolbar of the email editor contains four action buttons specific to WP Mailblox. These apply to the whole template and are always accessible regardless of which block is selected.</p>
 
-					<div class="docs-block-table docs-block-table--two-col">
+					<div class="docs-block-table-wrap"><div class="docs-block-table docs-block-table--two-col">
 						<div class="docs-block-row docs-block-row--header">
 							<div>Button</div>
 							<div>Description</div>
@@ -492,7 +492,7 @@ get_header();
 							<div><strong>Export</strong></div>
 							<div>Opens the export modal — download HTML, copy to clipboard, or push directly to your connected platform <span class="badge badge--pro">Pro</span>. WP Mailblox runs validation checks (missing subject, preheader, preset, localhost image URLs) and shows warnings before export.</div>
 						</div>
-					</div>
+					</div></div>
 				</div>
 			</section>
 

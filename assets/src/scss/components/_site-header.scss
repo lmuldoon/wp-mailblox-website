@@ -42,7 +42,7 @@
 
 	svg,
 	img {
-		height: 60px;
+		height: clamp(40px, 7vw, 60px);
 		width: auto;
 		display: block;
 		// Invert to white since header is always on dark background
