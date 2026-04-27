@@ -21,7 +21,8 @@ get_header();
 		<div id="main-title" class="headline hero__content">
 			<div class="hero__inner">
 				<p class="hero__eyebrow">WordPress Email Builder</p>
-				<h1>Build emails in&nbsp;WordPress.<br>Send them&nbsp;anywhere.</h1>
+				<!-- <h1>Build emails in&nbsp;WordPress.<br>Send them&nbsp;anywhere.</h1> -->
+				<h1>Build emails in&nbsp;WordPress.<br>Own your assets.<br>Export anywhere.</h1>
 				<p class="hero__sub">Design professional, email-safe HTML templates using Gutenberg blocks. Define your brand once with Presets. Export clean code or push directly to your email platform — no third-party builder required.</p>
 				<div class="hero__actions flex flex-wrap gap-4 items-center justify-center">
 					<a class="button button--primary" href="https://wordpress.org/plugins/wp-mailblox/" target="_blank" rel="noopener">
