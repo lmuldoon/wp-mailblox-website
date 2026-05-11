@@ -101,7 +101,7 @@ function createHeroBlocks() {
 		H = canvas.height = wrapper.offsetHeight;
 	}
 
-	// Isometric cube centered at (cx, cy) with half-size s
+	// Isometric cube centered at (cx, cy) with half-size s — outline only
 	function drawIsoCube(cx, cy, s, rgb, alpha) {
 		const [r, g, b] = rgb;
 		const c = 0.866; // cos(30°)
@@ -114,64 +114,49 @@ function createHeroBlocks() {
 		const tl  = [cx - s*c, cy - s*0.5  ];
 		const ctr = [cx,       cy          ];
 
-		// Top face — brightest
+		ctx.strokeStyle = `rgba(${r},${g},${b},${alpha})`;
+		ctx.lineWidth = 1;
+
 		ctx.beginPath();
+		// Outer hexagon
 		ctx.moveTo(top[0], top[1]);
 		ctx.lineTo(tr[0],  tr[1]);
-		ctx.lineTo(ctr[0], ctr[1]);
-		ctx.lineTo(tl[0],  tl[1]);
-		ctx.closePath();
-		ctx.fillStyle = `rgba(${r},${g},${b},${alpha})`;
-		ctx.fill();
-
-		// Right face — medium
-		ctx.beginPath();
-		ctx.moveTo(tr[0],  tr[1]);
 		ctx.lineTo(br[0],  br[1]);
 		ctx.lineTo(bot[0], bot[1]);
-		ctx.lineTo(ctr[0], ctr[1]);
-		ctx.closePath();
-		ctx.fillStyle = `rgba(${r},${g},${b},${alpha * 0.6})`;
-		ctx.fill();
-
-		// Left face — darkest
-		ctx.beginPath();
-		ctx.moveTo(tl[0],  tl[1]);
-		ctx.lineTo(ctr[0], ctr[1]);
-		ctx.lineTo(bot[0], bot[1]);
 		ctx.lineTo(bl[0],  bl[1]);
-		ctx.closePath();
-		ctx.fillStyle = `rgba(${r},${g},${b},${alpha * 0.35})`;
-		ctx.fill();
-
-		// Top-edge highlight
-		ctx.strokeStyle = `rgba(${r},${g},${b},${alpha * 0.55})`;
-		ctx.lineWidth = 0.6;
-		ctx.beginPath();
-		ctx.moveTo(top[0], top[1]);
-		ctx.lineTo(tr[0],  tr[1]);
-		ctx.lineTo(ctr[0], ctr[1]);
 		ctx.lineTo(tl[0],  tl[1]);
 		ctx.closePath();
+		// Inner Y
+		ctx.moveTo(ctr[0], ctr[1]); ctx.lineTo(tr[0],  tr[1]);
+		ctx.moveTo(ctr[0], ctr[1]); ctx.lineTo(tl[0],  tl[1]);
+		ctx.moveTo(ctr[0], ctr[1]); ctx.lineTo(bot[0], bot[1]);
 		ctx.stroke();
+	}
+
+	// Edge-weighted x — 42% left zone, 42% right zone, 16% sparse center
+	function spawnX() {
+		const r = Math.random();
+		if (r < 0.42) return Math.random() * W * 0.3;
+		if (r < 0.84) return W * 0.7 + Math.random() * W * 0.3;
+		return W * 0.2 + Math.random() * W * 0.6;
 	}
 
 	function makeBlock(preplaced) {
 		const rgb = PALETTES[Math.floor(Math.random() * PALETTES.length)];
-		const s   = 55 + Math.random() * 65; // 55–120 px half-size
+		const s   = 30 + Math.random() * 30; // 30–60 px half-size
 		return {
-			x:     Math.random() * W,
+			x:     spawnX(),
 			y:     preplaced ? Math.random() * H : -s * 2 - Math.random() * H * 0.4,
-			vx:    (Math.random() - 0.5) * 0.1,
+			vx:    0,
 			vy:    0.08 + Math.random() * 0.16,
 			s,
 			rgb,
-			alpha: 0.055 + Math.random() * 0.105,
+			alpha: 0.3 + Math.random() * 0.3,
 		};
 	}
 
 	function targetCount() {
-		return Math.min(Math.floor(W * H / 20000), 34);
+		return Math.min(Math.floor(W * H / 14000), 50);
 	}
 
 	function tick() {
@@ -179,17 +164,12 @@ function createHeroBlocks() {
 
 		for (const b of blocks) {
 			drawIsoCube(b.x, b.y, b.s, b.rgb, b.alpha);
-			b.x += b.vx;
 			b.y += b.vy;
 
 			if (b.y - b.s * 1.2 > H) {
-				b.x  = Math.random() * W;
 				b.y  = -b.s * 2;
-				b.vx = (Math.random() - 0.5) * 0.1;
 				b.vy = 0.08 + Math.random() * 0.16;
 			}
-			if (b.x < -b.s * 2)    b.x = W + b.s;
-			if (b.x > W + b.s * 2) b.x = -b.s;
 		}
 
 		// Vignette — darkens corners so text area stays crisp

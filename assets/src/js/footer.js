@@ -14,6 +14,9 @@ import {
 } from './scripts/header-collapse';
 HeaderStateController.init();
 
+import { initCheckout } from './scripts/checkout';
+initCheckout();
+
 import {
 	MenuController
 } from './scripts/nav-toggle';

@@ -5,12 +5,12 @@
 .hero-wrapper {
 	position: relative;
 	overflow: hidden;
-	// Deep navy with layered blue glows — blocks canvas provides the texture
+	// Deep navy gradient — lighter at top, darker at bottom, with layered blue glows
 	background:
 		radial-gradient(ellipse 50% 40% at 50% -5%, rgba(2, 172, 233, 0.07) 0%, transparent 65%),
 		radial-gradient(ellipse 70% 80% at 92% 0%,  rgba(2, 172, 233, 0.11) 0%, transparent 55%),
 		radial-gradient(ellipse 80% 70% at -5% 100%, rgba(2, 116, 165, 0.18) 0%, transparent 55%),
-		#060f1e;
+		linear-gradient(to bottom, #152d4a 0%, #060f1e 100%);
 }
 
 // Canvas injected by JS — fills wrapper behind all content
