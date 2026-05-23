@@ -2,6 +2,12 @@ import {
 	debounce,
 	throttle
 } from "./scripts/__event-utilities";
+import 'iconify-icon';
+
+import {
+	slick
+} from "slick-carousel";
+import Iconify from '@iconify/iconify';
 
 import {
 	HeaderStateController
@@ -16,59 +22,58 @@ import {
 } from './scripts/nav-toggle';
 MenuController.init();
 
+import {
+	initAnimations,
+	scrollToBottom
+} from './scripts/animations';
+initAnimations();
+
 import { initEmailClient } from './scripts/email-client';
 initEmailClient();
+
 
 require('./scripts/init.tabs')
 require('./scripts/accordian-controller')
 import './scripts/lazyload-frame';
 
-// GSAP / animations — lazy-load so it doesn't block initial render
-import('./scripts/animations').then(({ initAnimations }) => {
-	initAnimations();
+import GLightbox from 'glightbox';
+
+// GLightbox
+//------------------------------------------------------------------------------------------------------------------------------------------------
+
+const galleryLightbox = GLightbox({
+	selector: '.glightbox-gallery',
+	openEffect: 'fade',
+	closeEffect: 'fade',
+	slideEffect: 'fade',
+	dragable: false,
+	loop: true,
+	touchNavigation: false,
+	zoomable: true,
 });
 
-// Iconify — load after page is fully interactive
-window.addEventListener('load', () => {
-	import('iconify-icon');
-	import('@iconify/iconify');
+const locationLightbox = GLightbox({
+	selector: '.gl-single-image',
+	loop: false,
+	zoomable: true,
 });
 
-// GLightbox — load on first click of any lightbox trigger
-document.addEventListener('click', function onLightboxClick(e) {
-	if (e.target.closest('.glightbox-gallery, .gl-single-image, .glightbox-inline')) {
-		document.removeEventListener('click', onLightboxClick, true);
-		import('glightbox').then(({ default: GLightbox }) => {
-			GLightbox({
-				selector: '.glightbox-gallery',
-				openEffect: 'fade',
-				closeEffect: 'fade',
-				slideEffect: 'fade',
-				dragable: false,
-				loop: true,
-				touchNavigation: false,
-				zoomable: true,
-			});
-			GLightbox({
-				selector: '.gl-single-image',
-				loop: false,
-				zoomable: true,
-			});
-			GLightbox({
-				selector: '.glightbox-inline',
-				loop: false,
-				closeButton: true,
-				touchNavigation: false,
-				dragable: false,
-				openEffect: 'fade',
-				closeEffect: 'fade',
-				slideEffect: 'fade',
-				moreText: false,
-				width: '1000px',
-			}).open(e.target.closest('.glightbox-inline, .gl-single-image, .glightbox-gallery'));
-		});
+
+const inlineLightbox = GLightbox({
+	selector: '.glightbox-inline',
+	loop: false, // prevents looping to the next/previous modal
+	closeButton: true, // show close button
+	touchNavigation: false,
+	dragable: false,
+	openEffect: 'fade',
+	closeEffect: 'fade',
+	slideEffect: 'fade', // ensures no sliding effect that implies carousel
+	moreText: false, // optional, disables any "more" links
+	width: '1000px',
+	onSlideChange: function () {
+		// this will only run if multiple slides exist; with separate modals, nothing happens
 	}
-}, true);
+});
 
 // AOS Animations
 //------------------------------------------------------------------------------------------------------------------------------------------------
@@ -109,7 +114,8 @@ $(window).on('scroll', debounce(function (event) {
 
 
 
-// Slick carousel — lazy-load when any carousel element nears the viewport
+
+// Uncomment to use SVG icon buttons
 const prevArrowHTML = `
 <button type="button" class="slick-prev" aria-label="Previous slide">
   <svg aria-hidden="true" focusable="false">
@@ -123,119 +129,124 @@ const nextArrowHTML = `
     <use href="#arrow"></use>
   </svg>
 </button>`;
+const defaultArgs = {
+	autoplay: false,
+	dots: false,
+	arrows: true,
+	prevArrow: prevArrowHTML,
+	nextArrow: nextArrowHTML,
+	infinite: true,
+	adaptiveHeight: false,
+	draggable: false
+};
 
-const carouselEls = document.querySelectorAll('.js-image-carousel, .js-card-carousel, .js-carousel, .js-summary-items');
+const $imageCarousel = $('.js-image-carousel');
 
-if (carouselEls.length) {
-	const carouselObserver = new IntersectionObserver((entries) => {
-		if (entries.some(e => e.isIntersecting)) {
-			carouselObserver.disconnect();
-			import('slick-carousel').then(() => {
-				const $imageCarousel = $('.js-image-carousel');
-				if ($imageCarousel.length) {
-					$imageCarousel.slick({
-						autoplay: false,
-						dots: true,
-						arrows: true,
-						prevArrow: prevArrowHTML,
-						nextArrow: nextArrowHTML,
-						infinite: true,
-						adaptiveHeight: false,
-						draggable: true,
-						slidesToShow: 1,
-						centerMode: true,
-						centerPadding: '17%',
-						responsive: [{
-							breakpoint: 768,
-							settings: {
-								centerMode: false,
-								centerPadding: 0,
-								arrows: false,
-								adaptiveHeight: true
-							}
-						}]
-					});
+if ($imageCarousel.length) {
+
+	$imageCarousel.slick({
+		autoplay: false,
+		dots: true,
+		arrows: true,
+		prevArrow: prevArrowHTML,
+		nextArrow: nextArrowHTML,
+		infinite: true,
+		adaptiveHeight: false,
+		draggable: true,
+		slidesToShow: 1,
+		centerMode: true,
+		centerPadding: '17%',
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				centerMode: false,
+				centerPadding: 0,
+				arrows: false,
+				adaptiveHeight: true
+			}
+		}]
+	});
+
+} // /$imageCarousel.length
+
+const $cardCarousel = $('.js-card-carousel');
+
+if ($cardCarousel.length) {
+
+	$cardCarousel.slick({
+		dots: false,
+		arrows: true,
+		prevArrow: prevArrowHTML,
+		nextArrow: nextArrowHTML,
+		infinite: false,
+		slidesToShow: 2,
+		slidesToScroll: 2,
+		accessibility: true,
+		variableWidth: false,
+		focusOnSelect: false,
+		centerMode: false,
+		appendArrows: $('.feature-block__title-text .js-card-carousel-arrows'),
+		responsive: [
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
 				}
+			},
+		]
+	});
 
-				const $cardCarousel = $('.js-card-carousel');
-				if ($cardCarousel.length) {
-					$cardCarousel.slick({
-						dots: false,
-						arrows: true,
-						prevArrow: prevArrowHTML,
-						nextArrow: nextArrowHTML,
-						infinite: false,
-						slidesToShow: 2,
-						slidesToScroll: 2,
-						accessibility: true,
-						variableWidth: false,
-						focusOnSelect: false,
-						centerMode: false,
-						appendArrows: $('.feature-block__title-text .js-card-carousel-arrows'),
-						responsive: [
-							{
-								breakpoint: 600,
-								settings: {
-									slidesToShow: 1,
-									slidesToScroll: 1
-								}
-							},
-						]
-					});
+} // /$cardCarousel.length
+
+
+$(function () {
+	$('.js-carousel').slick({
+		dots: false,
+		arrows: true,
+		prevArrow: prevArrowHTML,
+		nextArrow: nextArrowHTML,
+		appendArrows: '.gallery-arrows',
+		infinite: false,
+		slidesToShow: 3,
+		accessibility: true,
+		variableWidth: false,
+		focusOnSelect: false,
+		centerMode: false,
+		responsive: [{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2
 				}
-
-				$('.js-carousel').slick({
-					dots: false,
-					arrows: true,
-					prevArrow: prevArrowHTML,
-					nextArrow: nextArrowHTML,
-					appendArrows: '.gallery-arrows',
-					infinite: false,
-					slidesToShow: 3,
-					accessibility: true,
-					variableWidth: false,
-					focusOnSelect: false,
-					centerMode: false,
-					responsive: [{
-							breakpoint: 992,
-							settings: {
-								slidesToShow: 2
-							}
-						},
-						{
-							breakpoint: 600,
-							settings: {
-								slidesToShow: 1
-							}
-						}
-					]
-				});
-
-				$('.js-summary-items').slick({
-					dots: false,
-					arrows: true,
-					prevArrow: prevArrowHTML,
-					nextArrow: nextArrowHTML,
-					appendArrows: '.summary-items-arrows',
-					infinite: false,
-					slidesToShow: 2,
-					accessibility: true,
-					variableWidth: false,
-					focusOnSelect: false,
-					centerMode: false,
-					responsive: [{
-						breakpoint: 1024,
-						settings: {
-							slidesToShow: 1
-						}
-					}]
-				});
-			});
-		}
-	}, { rootMargin: '200px' });
-
-	carouselEls.forEach(el => carouselObserver.observe(el));
-}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	$('.js-summary-items').slick({
+		dots: false,
+		arrows: true,
+		prevArrow: prevArrowHTML,
+		nextArrow: nextArrowHTML,
+		appendArrows: '.summary-items-arrows',
+		infinite: false,
+		slidesToShow: 2,
+		accessibility: true,
+		variableWidth: false,
+		focusOnSelect: false,
+		centerMode: false,
+		responsive: [{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 1
+			}
+		}]
+	});
+});
 
 (function ($) {
 
