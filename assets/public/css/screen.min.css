@@ -18,7 +18,7 @@
   --color-darkblue: #10253d;
   --color-midblue: #0274a5;
   --color-lightblue: #02ace9;
-  --color-coral: #FF6663;
+  --color-coral: #cc3836;
   --color-error: #d81e1e;
   --color-warning: #ff6700;
   --color-success: #4bb543;
@@ -20654,7 +20654,7 @@ iframe.wait-autoplay {
 }
 
 .button--nav:hover {
-  background-color: rgb(255, 61.9846153846, 58.2);
+  background-color: rgb(173.2428571429, 45.680952381, 43.9571428571);
   color: var(--color-white);
 }
 

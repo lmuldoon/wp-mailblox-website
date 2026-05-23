@@ -41,7 +41,7 @@ get_header();
 			</div>
 		</div>
 		<div class="hero-img">
-			<img src="/static/images/hero-editor.png?v=1" alt="WP Mailblox editor" />
+			<img src="/static/images/hero-editor.png?v=1" alt="WP Mailblox editor" width="976" height="500" fetchpriority="high" />
 		</div>
 	</div>
 </div>
@@ -231,7 +231,7 @@ get_header();
 
 					<!-- Email preview pane -->
 					<div class="email-client__preview" aria-live="polite" aria-label="Email preview">
-						<img class="email-preview__img" src="/static/images/email-examples/bright-n-light.jpg" alt="Email template preview">
+						<img class="email-preview__img" src="/static/images/email-examples/bright-n-light.jpg" alt="Email template preview" width="676" height="780">
 					</div><!-- /.email-client__preview -->
 
 				</div><!-- /.email-client__body -->

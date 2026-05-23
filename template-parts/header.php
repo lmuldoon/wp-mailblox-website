@@ -20,8 +20,9 @@ global $meta;
 	$IS_LIVE = preg_match($re, $_SERVER['SERVER_NAME']);
 	?>
 	<?php if ($IS_LIVE) { ?>
+		<link rel="preconnect" href="https://cdn.cookiehub.eu">
 		<!-- <script src="https://checkout.freemius.com/js/v1/" async></script> -->
-		<script src="https://cdn.cookiehub.eu/c2/a7951233.js"></script>
+		<script defer src="https://cdn.cookiehub.eu/c2/a7951233.js"></script>
 		<script type="text/javascript">
 			window.dataLayer = window.dataLayer || [];
 
@@ -64,10 +65,12 @@ global $meta;
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- End Favicons -->
 
-	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('screen.css'); ?>">
-	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('print.css'); ?>">
+	<?php $screenCss = get_revision('screen.css'); ?>
+	<link rel="preload" as="style" href="/<?php echo $screenCss; ?>" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" type="text/css" href="/<?php echo $screenCss; ?>"></noscript>
+	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('print.css'); ?>" media="print">
 
-	<script type="text/javascript" src="/<?php echo get_revision('header.js'); ?>"></script>
+	<script defer type="text/javascript" src="/<?php echo get_revision('header.js'); ?>"></script>
 	<?php if ($IS_LIVE) { ?>
 		<!-- Google tag (gtag.js) -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-TTDHMMKFTJ"></script>

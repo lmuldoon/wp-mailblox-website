@@ -61,7 +61,7 @@ module.exports = {
           darkblue: '#10253d',
           midblue: '#0274a5',
           lightblue: '#02ace9',
-          coral: '#FF6663',
+          coral: '#cc3836',
           error: '#d81e1e',
           warning: '#ff6700',
           success: '#4bb543'

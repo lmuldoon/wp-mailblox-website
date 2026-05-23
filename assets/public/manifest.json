@@ -3,7 +3,19 @@
   "header.js": "assets/public/js/header.min.js",
   "screen.css": "assets/public/css/screen.min.css",
   "print.css": "assets/public/css/print.min.css",
+  "js/assets_src_js_scripts_animations_js.min.js": "assets/public/js/assets_src_js_scripts_animations_js.min.js",
+  "js/vendors-node_modules_iconify-icon_dist_iconify-icon_mjs.min.js": "assets/public/js/vendors-node_modules_iconify-icon_dist_iconify-icon_mjs.min.js",
+  "js/vendors-node_modules_iconify_iconify_dist_iconify_mjs.min.js": "assets/public/js/vendors-node_modules_iconify_iconify_dist_iconify_mjs.min.js",
+  "js/vendors-node_modules_glightbox_dist_js_glightbox_min_js.min.js": "assets/public/js/vendors-node_modules_glightbox_dist_js_glightbox_min_js.min.js",
+  "js/vendors-node_modules_slick-carousel_slick_slick_js.min.js": "assets/public/js/vendors-node_modules_slick-carousel_slick_slick_js.min.js",
+  "js/vendors-node_modules_gsap_ScrollTrigger_js.min.js": "assets/public/js/vendors-node_modules_gsap_ScrollTrigger_js.min.js",
   "footer.min.js.map": "assets/public/js/footer.min.js.map",
   "screen.min.css.map": "assets/public/css/screen.min.css.map",
-  "print.min.css.map": "assets/public/css/print.min.css.map"
+  "print.min.css.map": "assets/public/css/print.min.css.map",
+  "assets_src_js_scripts_animations_js.min.js.map": "assets/public/js/assets_src_js_scripts_animations_js.min.js.map",
+  "vendors-node_modules_iconify-icon_dist_iconify-icon_mjs.min.js.map": "assets/public/js/vendors-node_modules_iconify-icon_dist_iconify-icon_mjs.min.js.map",
+  "vendors-node_modules_iconify_iconify_dist_iconify_mjs.min.js.map": "assets/public/js/vendors-node_modules_iconify_iconify_dist_iconify_mjs.min.js.map",
+  "vendors-node_modules_glightbox_dist_js_glightbox_min_js.min.js.map": "assets/public/js/vendors-node_modules_glightbox_dist_js_glightbox_min_js.min.js.map",
+  "vendors-node_modules_slick-carousel_slick_slick_js.min.js.map": "assets/public/js/vendors-node_modules_slick-carousel_slick_slick_js.min.js.map",
+  "vendors-node_modules_gsap_ScrollTrigger_js.min.js.map": "assets/public/js/vendors-node_modules_gsap_ScrollTrigger_js.min.js.map"
 }
