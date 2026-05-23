@@ -41,7 +41,10 @@ get_header();
 			</div>
 		</div>
 		<div class="hero-img">
-			<img src="/static/images/hero-editor.png?v=1" alt="WP Mailblox editor" width="976" height="500" fetchpriority="high" />
+			<img src="/static/images/hero-editor.png?v=1"
+				srcset="/static/images/hero-editor-800.png 800w, /static/images/hero-editor.png 1952w"
+				sizes="(max-width: 768px) 100vw, 976px"
+				alt="WP Mailblox editor" width="976" height="500" fetchpriority="high" />
 		</div>
 	</div>
 </div>
