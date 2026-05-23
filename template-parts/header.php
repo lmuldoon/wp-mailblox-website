@@ -65,9 +65,7 @@ global $meta;
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- End Favicons -->
 
-	<?php $screenCss = get_revision('screen.css'); ?>
-	<link rel="preload" as="style" href="/<?php echo $screenCss; ?>" onload="this.onload=null;this.rel='stylesheet'">
-	<noscript><link rel="stylesheet" type="text/css" href="/<?php echo $screenCss; ?>"></noscript>
+	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('screen.css'); ?>">
 	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('print.css'); ?>" media="print">
 
 	<script defer type="text/javascript" src="/<?php echo get_revision('header.js'); ?>"></script>
