@@ -65,8 +65,18 @@ global $meta;
 	<link rel="manifest" href="/site.webmanifest" />
 	<!-- End Favicons -->
 
-	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('screen.css'); ?>">
+	<!-- Critical CSS: constrains logo SVG so it renders at correct size before full stylesheet loads -->
+	<style>.site-logo svg,.site-logo img{height:clamp(40px,7vw,60px);width:auto;display:block;}</style>
+	<?php $screenCss = get_revision('screen.css'); ?>
+	<link rel="preload" as="style" href="/<?php echo $screenCss; ?>" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="/<?php echo $screenCss; ?>"></noscript>
 	<link rel="stylesheet" type="text/css" href="/<?php echo get_revision('print.css'); ?>" media="print">
+	<?php if ($meta->slug === 'home') { ?>
+	<link rel="preload" as="image"
+		imagesrcset="/static/images/hero-editor-800.png 800w, /static/images/hero-editor.png 1952w"
+		imagesizes="(max-width: 768px) 100vw, 976px"
+		href="/static/images/hero-editor.png">
+	<?php } ?>
 
 	<script defer type="text/javascript" src="/<?php echo get_revision('header.js'); ?>"></script>
 	<?php if ($IS_LIVE) { ?>
